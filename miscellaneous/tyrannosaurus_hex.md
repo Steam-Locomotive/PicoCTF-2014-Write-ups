@@ -38,7 +38,7 @@ variable', or 'do a buffer overflow on this input variable'.* -->
 
 ### Details ###
 
-WolframAlpha has base conversion built
+Wolfram Alpha has base conversion built
 in. [Here](http://www.wolframalpha.com/input/?i=base+conversion&a=*MC.~-_*ExamplePage-&f2=23&f=BaseConversion.numToConvert%5Cu005f23&f3=2&f=BaseConversion.toBase%5Cu005f2&a=*FVarOpt.1-_**-.***BaseConversion.fromBase---.*--)
 is the help page. Following their syntax, we can enter
 [`0xac06e9ba`](http://www.wolframalpha.com/input/?i=0xac06e9ba).
