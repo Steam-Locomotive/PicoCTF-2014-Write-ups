@@ -38,12 +38,12 @@ variable', or 'do a buffer overflow on this input variable'.* -->
 
 ### Details ###
 
-Wolfram alpha has base conversion built
+WolframAlpha has base conversion built
 in. [Here](http://www.wolframalpha.com/input/?i=base+conversion&a=*MC.~-_*ExamplePage-&f2=23&f=BaseConversion.numToConvert%5Cu005f23&f3=2&f=BaseConversion.toBase%5Cu005f2&a=*FVarOpt.1-_**-.***BaseConversion.fromBase---.*--)
-is the help page. Following there syntax, we can put in
+is the help page. Following their syntax, we can enter
 [`0xac06e9ba`](http://www.wolframalpha.com/input/?i=0xac06e9ba).
 
-In a programming language like python, we use the
+This conversion can also be preformed in other languages, such as python with the
 [`int`](https://docs.python.org/2/library/functions.html#int) function. The
 first argument is the string to convert. The second argument is the base to
 interpret in. Therefore, we put
