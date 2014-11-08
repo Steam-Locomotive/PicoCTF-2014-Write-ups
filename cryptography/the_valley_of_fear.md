@@ -12,7 +12,7 @@ Might each set of three numbers represent a word in a message?
 
 ###Overview
 
-Find a way to relate three numbers to a word in a text.
+Find a way to relate three numbers to a word in text.
 
 ###Details
 After opening the text, we see a lot of text formatted into paragraphs. According to the hint, we need to find a coordinate system that maps three numbers to a word in the text. Note that all the numbers are less than 10. Also note that the text is well organized by paragraph and line. This likely means the numbers relate to some textual structure, so lets try (paragraph #, line #, word #)
