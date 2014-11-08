@@ -9,7 +9,7 @@
    * [Injection 3](web_exploitation/injection_3)
    * [Injection 4](web_exploitation/injection_4.md)
 * [Cryptography](cryptography/README.md)
-   * [Substitution](cryptography/substitution.py)
+   * [Substitution](cryptography/substitution.md)
    * [RSA](cryptography/rsa.md)
    * [ECC](cryptography/ecc.md)
    * [Low Entropy](cryptography/low_entropy.md)
