@@ -13,6 +13,8 @@
 * [Cryptography](cryptography/README.md)
    * [Caeser](cryptography/ceaser.md)
    * [RSA](cryptography/rsa.md)
+   * [ECC](cryptography/ecc.md)
+   * [Block](cryptography/block.md)
 * [Forensics](forensics/README.md)
 <<<<<<< Updated upstream
    * [Pickle Jar](forensics/pickle_jar.md)
