@@ -16,6 +16,7 @@
    * [ECC](cryptography/ecc.md)
    * [Low Entropy](cryptography/low_entropy.md)
    * [Block](cryptography/block.md)
+   * [RSA Mistake](cryptography/RSAMistake.md)
 * [Forensics](forensics/README.md)
    * [Pickle Jar](forensics/pickle_jar.md)
    * [SSH Backdoor](forensics/ssh_backdoor.md)
