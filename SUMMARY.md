@@ -3,6 +3,7 @@
 * [Introduction](README.md)
 * [Reverse Engineering](reverse_engineering/README.md)
    * [Cyborg Secrets](reverse_engineering/cyborg_secrets.md)
+   * [Police Records](reverse_engineering/plice_records.md)
 * [Web Exploitation](web_exploitation/README.md)
    * [No Comment](web_exploitation/no_comment.md)
    * [Internet Inspection](web_exploitation/internet_inspection.md)
