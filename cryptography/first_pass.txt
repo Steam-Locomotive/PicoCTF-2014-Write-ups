@@ -1,0 +1,124 @@
+h->E
+r->T
+i->H
+b->W
+e->A
+q->I
+
+Single letters
+12.3      h -> E
+9.8       c
+9.0       r
+8.4       k
+7.2       e
+7.1       i
+5.9       w
+5.8       q
+5.1       u
+4.1       a
+
+Letter bigrams
+6.9       ri -> TH
+5.3       ih -> HE 
+3.1       qk
+3.1       cj
+2.7       gc
+2.6       ek
+2.2       hw
+2.2       kt
+2.1       uu
+1.9       cw
+Perhaps the source is including trigrams seperated by spaces
+(eg, 'ist' is a trigram because the text contains 'is this'. I don't count these, perhaps the source does).
+
+Letter trigrams
+6.9       rih -> THE 2
+4.1       gcj -/> AND, because then 'rc' maps to 'tn'
+2.0       ekt
+1.8       euu
+1.6       shw
+1.5       hsh
+1.3       fek
+1.2       bqr
+1.2       qri
+1.2       hew
+What was said about bigrams can also be said about trigrams
+
+All letter tetragrams
+2.6       hshw -> EVER?
+2.0       bqri
+1.7       khsh -> WERE?
+1.7       riqk
+1.4       cucw
+1.4       fcuc
+1.4       ucwa
+1.2       dkcb
+1.2       cjuu
+1.2       bqkt
+Are they tetragrams or quadrigrams?
+
+One-letter words
+70.0      e -> A|I -> a?
+30.0      q -> A|I -> i?
+They map to 'a' or 'i'
+
+Two-letter words
+20.5      co
+11.4      rc
+9.1       bh -> bE
+9.1       qa
+6.8       ac
+6.8       qk -> IW|AW
+6.8       qo
+4.5       qr
+4.5       vh
+4.5       ng
+
+Three-letter words
+31.5      rih -> THE
+18.5      gcj
+9.3       euu
+9.3       ekt
+6.5       fek
+5.6       ewh
+2.8       cbk
+2.8       iea
+1.9       ocw
+1.9       fwg
+
+Four-letter words
+8.8       bqri -> bqTH -> WITH?
+5.9       dkcb
+5.9       bqkt
+4.4       fcnh
+2.9       bcuo
+2.9       khht
+2.9       fcwk
+2.9       aqkz
+2.9       tckr
+2.9       rier
+This one is what really confirms q -> I
+
+First letter in word
+16.8      r -> T
+11.7      e
+8.9       b
+8.2       f
+7.9       g
+6.3       c
+5.4       q
+4.7       a
+4.1       i
+3.5       n
+
+Last letter in word
+24.1      h -> E
+8.5       k
+8.2       t
+7.9       a
+7.3       r
+6.3       j
+6.3       w
+6.0       u
+4.4       i
+4.4       o
