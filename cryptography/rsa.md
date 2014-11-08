@@ -26,8 +26,9 @@ One of the reasons RSA is so popular is the simplicity of the cryptosystem. Here
 
 1. Choose two (usually large) primes, p and q
 2. Compute a value n = p*q, commonly reffered to as the modulus
+3. Compute phi(n) = (p-1)*(q-1)
 3. Choose a "public exponent value", denoted e. Typically this is 3 or 65537.
-4. Compute d, the "private exponent value" which is the multiplicitve inverse of e mod(n)
+4. Compute d, the "private exponent value" which is the multiplicitve inverse of e mod(phi(n))
 5. To encrypt a message m, compute m^e mod (n)
 6. To decrypt a ciphertext c, compute c^d mod (n)
 
