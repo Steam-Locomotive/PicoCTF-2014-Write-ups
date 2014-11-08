@@ -13,7 +13,7 @@ PicoCTF 2014 Writeups
  |/-=|\_\_\_|=    ||    ||    ||    |\_\_\_\_\_/~\\\\\_\_\_/               |\_D\_\_D\_\_D\_|  |\_D\_\_D\_\_D\_|
   \\\\\_/      \\\\O=====O=====O=====O\_/      \\\\\_/                  \\\\\_/   \\\\\_/    \\\\\_/   \\\\\_/
 </pre>
-CTFs, or Capture-The-Flags, are computer security competitions where contestants must solve challenges to find a flag (typically a string). These challenges can range in subject and difficulty from reverse engineering files to exploiting buffer overflows. [PicoCTF](http://picoctf.com) is a CTF created by student-run organizations at [Carnegie Mellon University](http://www.cmu.edu/index.shtml) targetted towards middle and high schoolers.
+CTFs, or Capture-The-Flags, are computer security competitions where contestants must solve challenges to find a flag (typically a string). These challenges can range in subject and difficulty from reverse engineering files to exploiting buffer overflows. [PicoCTF](http://picoctf.com) is a CTF created by student-run organizations at [Carnegie Mellon University](http://www.cmu.edu/index.shtml) targeted towards middle and high schoolers.
 
 We are Steam Locomotive, a team of 5 high school students from the [Liberal Arts and Science Academy](http://lasaonline.org) in Austin, TX. We are:
 
@@ -23,7 +23,7 @@ We are Steam Locomotive, a team of 5 high school students from the [Liberal Arts
 * Evan Tey - [evantey14](https://github.com/evantey14)
 * Nha Nguyen - [zicez](https://github.com/zicez)
 
-Over the past two weeks competing, we've accumulated a total of 4985 points and finished in 18th place.
+During PicoCTF 2014, we accumulated a total of 4985 points and finished in 18th place.
 
 This [GitBook](http://gitbook.io)'s goal is to contain a comprehensive, complete set of write-ups for all of the challenges in PicoCTF 2014. It is a constant work in progress, so if a write-up is not posted immediately, don't worry! We are working as fast as possible to add all of the problems, and should have them done within a couple weeks.
 
