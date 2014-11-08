@@ -13,6 +13,10 @@
    * [Caesar](cryptography/ceaser.md)
    * [The Valley of Fear](cryptography/the_valley_of_fear)
    * [RSA](cryptography/rsa.md)
+   * [ECC](cryptography/ecc.md)
+   * [Low Entropy](cryptography/low_entropy.md)
+   * [Block](cryptography/block.md)
+
 * [Forensics](forensics/README.md)
    * [SSH Backdoor](forensics/ssh_backdoor.md)
 * [Binary Exploitation](binary_exploitation/README.md)
