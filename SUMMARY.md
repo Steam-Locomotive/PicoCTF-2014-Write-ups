@@ -7,6 +7,7 @@
 * [Web Exploitation](web_exploitation/README.md)
    * [No Comment](web_exploitation/no_comment.md)
    * [Injection 1](web_exploitation/injection_1.md)
+   * [Injection 2](web_exploitation/injection_2.md)
 * [Cryptography](cryptography/README.md)
    * [Caeser](cryptography/ceaser.md)
    * [RSA](cryptography/rsa.md)
