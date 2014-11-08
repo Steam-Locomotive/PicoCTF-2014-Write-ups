@@ -23,6 +23,8 @@
    * [Pickle Jar](forensics/pickle_jar.md)
    * [SSH Backdoor](forensics/ssh_backdoor.md)
 * [Binary Exploitation](binary_exploitation/README.md)
+   * [OBO](binary_exploitation/OBO.md)
 * [Miscellaneous](miscellaneous/README.md)
    * [Tyrannosaurus Hex](miscellaneous/tyrannosaurus_hex.md)
+   * [OBO](binary_exploitation/OBO.md)
 

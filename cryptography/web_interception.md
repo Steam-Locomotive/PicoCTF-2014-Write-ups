@@ -71,8 +71,8 @@ message fit perfectly in 80 bytes. Sending 12 bytes must make it go one over
 80, which needs another block (of 16 bytes), which will end up being 96.
 
 Here is the interesting part: if I send 11 bytes of filler text, I can finish
-off the block started by 'GET /'. Then after that, I can send 15 bytes of
-'A'. Then the block will look like:
+off the block started by `GET /`. Then after that, I can send 15 bytes of
+`A`. Then I can send 15 more `A`. Then the block will look like:
 
     G E T   / A A A A A A A A A A | A A A A A A A A A A A A A A A A A A A A 1 | 2 3 4 ...
     ^                             ^                                           ^
@@ -82,7 +82,8 @@ where the | denotes a border of the blocks, and the number 1 reperesents the
 first character of the secret, 2 the second character, and so on. Once I have
 sent this request, I should store the second block of the result.
 
-Now lets say I send another block that looks like
+Now lets say I send another block. This time I send 15 `A` followed by 15 more
+`A`, but after that put in a character, call it `i`. that looks like this:
 
     G E T   / A A A A A A A A A A | A A A A A A A A A A A A A A A A A A A A i | 1 2 3 ...
     ^                             ^                                           ^
