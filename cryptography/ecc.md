@@ -1,5 +1,6 @@
 ## ECC - 100 (Cryptography) ##
-by ZIceZ
+####writeup by ZIceZ
+
 ### Problem ###
 We found a weird piece of paper with [this](https://picoctf.com/problem-static/crypto/ecc/ecc_handout.txt) written on it. I can't make heads or tails of it, but it seems to be talking about an encoded message. Can you get the message for us?
 
@@ -16,7 +17,7 @@ Since we have a coordinate of the system, b can be solved by plugging in X and Y
 $12418605208975891779391^2 = 236857987845294655469221^3 + b \bmod 928669833265826932708591$
 Wolfram alpha can solve this equation for you giving
 $b = 268892790095131465246420$
-With the all the variables found, the cryptosystem can be built to decrypt your message. As the hint suggested, Sage has a built in library that can handle all the calculations. There is an online version of [Sage](cloud.sagemath.com), so downloading it is not necessary. For information on how to setup an elliptic curve, refer to [here](http://www.sagemath.org/doc/constructions/elliptic_curves.html). 
+With the all the variables found, the cryptosystem can be built to decrypt your message. As the hint suggested, Sage has a built in library that can handle all the calculations. There is an online version of [Sage](cloud.sagemath.com), so downloading it is not necessary. For information on how to setup an elliptic curve, refer to [here](http://www.sagemath.org/doc/constructions/elliptic_curves.html).
 ```
 F = FiniteField(928669833265826932708591)
 E = EllipticCurve(F,[0,268892790095131465246420])

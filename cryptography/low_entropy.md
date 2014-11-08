@@ -1,5 +1,6 @@
 ## Low Entropy - 110 (Cryptography) ##
 ####writeup by Oksisane
+
 ### Problem ###
 
 Daedalus Corp's spy in Thyrin Labs seems to sometimes use an encrypted drop box for their messages. We intercepted one of their messages, but we don't seem to be able to decrypt it. Fortunately, we have the source and the address of their key generation server: maybe there's a way to use that to decrypt their message? Unfortunately, we don't have their list of cached primes...
