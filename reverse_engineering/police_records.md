@@ -69,7 +69,7 @@ c.send(struct.pack('!i', 0xAA))
 
 Now I turn my attention to the `secure_send` function.
 
-```
+```python
 # directory_server.py
 def secure_send(self, msg):
     """ Sends msg back to the client securely. """
