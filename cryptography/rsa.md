@@ -25,14 +25,18 @@ How does RSA work?
 One of the reasons RSA is so popular is the simplicity of the cryptosystem. Here are the basic steps of RSA Encryption and Decryption.
 
 1. Choose two (usually large) primes, p and q
-2. Compute a value n = p*q, commonly reffered to as the modulus
-3. Compute phi(n) = (p-1)*(q-1)
+2. Compute a value N = p*q, commonly reffered to as the modulus
+3. Compute phi(N) = (p-1)*(q-1)
 3. Choose a "public exponent value", denoted e. Typically this is 3 or 65537.
-4. Compute d, the "private exponent value" which is the multiplicitve inverse of e mod(phi(n))
-5. To encrypt a message m, compute m^e mod (n)
-6. To decrypt a ciphertext c, compute c^d mod (n)
+4. Compute d, the "private exponent value" which is the multiplicitve inverse of e mod(phi(N))
+5. To encrypt a message m, compute m^e mod (N)
+6. To decrypt a ciphertext c, compute c^d mod (N)
 
-Opening the `key_data.txt` file we can see that the d and n values have already been provided for us, along with the ciphertext in `ciphertext.txt`. Great! All we have to do now is compute c^d mod(n). Here is an example of this in Python, using the `pow` function.
+Opening the `key_data.txt` file we can see that the d and n values have already been provided for us, along with the ciphertext in `ciphertext.txt`. Great! All we have to do now is compute 
+$$
+c^d \bmod N
+$$
+Here is an example of this in Python, using the `pow` function.
 ```python
 c = 0x58ae101736022f486216e290d39e839e7d02a124f725865ed1b5eea7144a4c40828bd4d14dcea967561477a516ce338f293ca86efc72a272c332c5468ef43ed5d8062152aae9484a50051d71943cf4c3249d8c4b2f6c39680cc75e58125359edd2544e89f54d2e5cbed06bb3ed61e5ca7643ebb7fa04638aa0a0f23955e5b5d9
 d = 0x496747c7dceae300e22d5c3fa7fd1242bda36af8bc280f7f5e630271a92cbcbeb7ae04132a00d5fc379274cbce8c353faa891b40d087d7a4559e829e513c97467345adca3aa66550a68889cf930ecdfde706445b3f110c0cb4a81ca66f8630ed003feea59a51dc1d18a7f6301f2817cb53b1fb58b2a5ad163e9f1f9fe463b901
