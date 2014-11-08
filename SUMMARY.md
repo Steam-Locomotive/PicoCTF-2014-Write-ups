@@ -4,7 +4,6 @@
 * [Reverse Engineering](reverse_engineering/README.md)
    * [Cyborg Secrets](reverse_engineering/cyborg_secrets.md)
 * [Web Exploitation](web_exploitation/README.md)
-    
    * [No Comment](web_exploitation/no_comment.md)
    * [Injection 1](web_exploitation/injection_1.md)
    * [Injection 2](web_exploitation/injection_2.md)
