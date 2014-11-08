@@ -17,6 +17,7 @@
    * [ECC](cryptography/ecc.md)
    * [Low Entropy](cryptography/low_entropy.md)
    * [Block](cryptography/block.md)
+   * [Web Interception](cryptography/web_interception.md)
    * [RSA Mistakes](cryptography/RSAMistake.md)
 * [Forensics](forensics/README.md)
    * [Pickle Jar](forensics/pickle_jar.md)
