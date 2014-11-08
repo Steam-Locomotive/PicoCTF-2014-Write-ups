@@ -21,7 +21,6 @@
    * [Web Interception](cryptography/web_interception.md)
    * [RSA Mistakes](cryptography/RSAMistake.md)
 * [Forensics](forensics/README.md)
-   * [Pickle Jar](forensics/pickle_jar.md)
    * [SSH Backdoor](forensics/ssh_backdoor.md)
 * [Binary Exploitation](binary_exploitation/README.md)
    * [OBO](binary_exploitation/OBO.md)
