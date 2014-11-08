@@ -13,7 +13,7 @@ This is just plain old RSA decryption.
 
 ### Overview ###
 
-Decrypt [RSA](http://en.wikipedia.org/wiki/RSA_(cryptosystem) given a public/private key and ciphertext.
+Decrypt [RSA](http://en.wikipedia.org/wiki/RSA_(cryptosystem)) given a public/private key and ciphertext.
 
 ### Details ###
 
