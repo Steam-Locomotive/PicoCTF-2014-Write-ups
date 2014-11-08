@@ -36,7 +36,7 @@ N = 0xb197d3afe713816582ee988b276f635800f728f118f5125de1c7c1e57f2738351de8ac643c
 pow(c,d,N)
 6861258080156838161702842331923358676171560876407473046529829839343656597465212914039681453600936115970901835821496646686989354106193309238635902806952707316468225954530890939348472370864299291305467697683712618633711800447421650242202732L
 ```
-The last step in solving this question is converting the resulting number to  a readable form. For this we again turn to Python where we can convert this number using the python function below (credit to [this blog](http://jhafranco.com/2012/01/29/rsa-implementation-in-python/))
+The last step in solving this question is converting the resulting number to  a readable form. For this we again turn to Python where we can convert this number using the function below (credit to [this blog](http://jhafranco.com/2012/01/29/rsa-implementation-in-python/))
 ``` python
 def int2Text(number, size):
     text = "".join([chr((number >> j) & 0xff)
