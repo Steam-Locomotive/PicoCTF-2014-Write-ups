@@ -1,4 +1,5 @@
 ## Cyborg Secrets - 80 (Reverse Engineering) ##
+####writeup by Oksisane
 
 ### Problem ###
 
