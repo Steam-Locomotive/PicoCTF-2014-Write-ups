@@ -8,6 +8,7 @@
    * [No Comment](web_exploitation/no_comment.md)
    * [Internet Inspection](web_exploitation/internet_inspection.md)
    * [Injection 1](web_exploitation/injection_1.md)
+   * [secure_page_service](web_exploitation/secure_page_service.md)
    * [Injection 2](web_exploitation/injection_2.md)
    * [Injection 4](web_exploitation/injection_4.md)
 * [Cryptography](cryptography/README.md)
