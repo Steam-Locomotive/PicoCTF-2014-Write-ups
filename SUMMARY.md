@@ -10,7 +10,7 @@
    * [Injection 2](web_exploitation/injection_2.md)
    * [Injection 4](web_exploitation/injection_4.md)
 * [Cryptography](cryptography/README.md)
-   * [Caesar](cryptography/ceaser.md)
+   * [Caesar](cryptography/caeser.md)
    * [The Valley of Fear](cryptography/the_valley_of_fear)
    * [RSA](cryptography/rsa.md)
    * [ECC](cryptography/ecc.md)
