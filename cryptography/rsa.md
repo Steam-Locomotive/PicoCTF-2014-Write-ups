@@ -17,7 +17,7 @@ Decrypt [RSA](http://en.wikipedia.org/wiki/RSA_(cryptosystem)) given a public/pr
 
 ### Details ###
 
-[RSA](http://en.wikipedia.org/wiki/RSA_(cryptosystem) is a extremely popular cryptosystems which relies on [Modular arithmetic](http://en.wikipedia.org/wiki/Modular_arithmetic) for encryption and decryption.
+[RSA](http://en.wikipedia.org/wiki/RSA_(cryptosystem)) is a extremely popular cryptosystems which relies on [Modular arithmetic](http://en.wikipedia.org/wiki/Modular_arithmetic) for encryption and decryption.
 
 How does RSA work?
 
