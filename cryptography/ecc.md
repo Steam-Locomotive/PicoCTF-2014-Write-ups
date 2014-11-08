@@ -12,7 +12,8 @@ Use a computer algebra system with builtin support for elliptic curves, such as 
 Elliptical curve encryption.
 ### Details ###
 First solved for the variable b to complete the elliptic curve cryptosystem.
-$$y^2 = x^3 + a(x) + b \bmod n$$ where a = 0
+$$y^2 = x^3 + a(x) + b \bmod n$$
+where a = 0
 Since we have a coordinate of the system, b can be solved by plugging in X and Y.
 $$12418605208975891779391^2 = 236857987845294655469221^3 + b \bmod 928669833265826932708591$$
 Wolfram alpha can solve this equation for you giving
