@@ -12,11 +12,11 @@ I wonder if they hardcoded the password string.
 
 ### Overview ###
 
-Open the given program in a text editor (such as [Notepad ++](http://notepad-plus-plus.org/)) or disassembler (such as [Hex-Rays IDA](https://www.hex-rays.com/products/ida/)) to find the password, then input it into the program to get the flag.
+Open the given program in a text editor (such as [Notepad ++](http://notepad-plus-plus.org/)) or disassembler (such as [Hex-Rays IDA](https://www.hex-rays.com/products/ida/)) to find the password in plaintext, then input it into the program to get the flag.
 
 ### Details ###
 
-The hint indcates that the password is hardcoded into the program. Opening the program with a text editor or disassembler reveals the debug admin password `2manyHacks_Debug_Admin_Test`. To get the flag we input this into the program running on the shell, using the command `./cyborg_defence 2manyHacks_Debug_Admin_Test`
+The hint indcates that the password is hardcoded into the program. Opening the program with a text editor or disassembler reveals the debug admin password `2manyHacks_Debug_Admin_Test`. To get the flag we input this into the program running on the shell, using the command `./cyborg_defence 2manyHacks_Debug_Admin_Test` (where the `./cyborg_defence` executes the cyborg_defence program).
 
 ### Flag ###
 
