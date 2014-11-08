@@ -25,6 +25,6 @@ We are Steam Locomotive, a team of 5 high school students from the [Liberal Arts
 
 Over the past two weeks competing, we've accumulated a total of 4985 points and finished in 14th? place.
 
-This [Git Book](http://gitbook.io) contains write-ups of the challenges we solved.
+This [Git B ook](http://gitbook.io) contains write-ups of the challenges we solved.
 
 We'd would like to thank the creators of PicoCTF for the competition, all the participants of PicoCTF, and our sister team, Team Evan, for contributing to the write-ups.
