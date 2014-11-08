@@ -17,7 +17,7 @@ Open the given program in a text editor (such as [Notepad ++](http://notepad-plu
 
 ### Details ###
 
-The hint indcates that the password is hardcoded into the program. Opening the program with a text editor or disassembler reveals the debug admin password `2manyHacks_Debug_Admin_Test`. To get the flag we input this into the program running on the shell, using the command `./cyborg_defence 2manyHacks_Debug_Admin_Test` (where the `./cyborg_defence` executes the cyborg_defence program).
+The hint indicates that the password is hardcoded into the program. Opening the program with a text editor or disassembler reveals the debug admin password `2manyHacks_Debug_Admin_Test`. To get the flag we input this into the program running on the shell, using the command `./cyborg_defence 2manyHacks_Debug_Admin_Test` (where the `./cyborg_defence` executes the cyborg_defence program).
 
 ### Flag ###
 

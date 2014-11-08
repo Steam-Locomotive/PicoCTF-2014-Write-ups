@@ -23,7 +23,7 @@ We are Steam Locomotive, a team of 5 high school students from the [Liberal Arts
 * Evan Tey - [evantey14](https://github.com/evantey14)
 * Nha Nguyen - [zicez](https://github.com/zicez)
 
-Over the past two weeks competing, we've accumulated a total of 4985 points and finished in 14th? place.
+Over the past two weeks competing, we've accumulated a total of 4985 points and finished in 18th place.
 
 This [GitBook](http://gitbook.io)'s goal is to contain a comprehensive, complete set of write-ups for all of the challenges in PicoCTF 2014. It is a constant work in progress, so if a write-up is not posted immediately, don't worry! We are working as fast as possible to add all of the problems, and should have them done within a couple weeks.
 

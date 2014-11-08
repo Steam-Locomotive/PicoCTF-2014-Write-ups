@@ -63,7 +63,7 @@ concatenates a 5 byte string, your input, and then the secret data.
   secret_data))
 ```
 
-(My send function takes care of encodeing to hex and all that jazz.) I can find
+(My send function takes care of encoding to hex and all that jazz.) I can find
 out the length of the secret. If I send an 8, 9, 10, or 11 long string, the
 length of the response is 80 bytes long. If I send a 12, 13, 14, or 15 long
 string, the length of the response is 76. Sending 11 bytes must make the
@@ -78,7 +78,7 @@ off the block started by `GET /`. Then after that, I can send 15 bytes of
     ^                             ^                                           ^
 	First block                   Second block                                Third block
 
-where the | denotes a border of the blocks, and the number 1 reperesents the
+where the | denotes a border of the blocks, and the number 1 represents the
 first character of the secret, 2 the second character, and so on. Once I have
 sent this request, I should store the second block of the result.
 

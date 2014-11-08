@@ -186,7 +186,7 @@ You can see how the encrypted and decrypted letters mix together. The decrypted
 ones are the ones we solved last pass. The decrypted letters are capital and
 the encrypted letters are lowercase.
 
-Apperently the text `qk` showed up a lot. We
+Apparently the text `qk` showed up a lot. We
 know the `q` maps to `I` from the first pass, so it shows up as `Ik` (`I` is decrypted,
 `k` is encrypted). This could be `IN`, `IS`, or `IF`. This means `k` decrypts
 to `N` or `S` or `F`. Trying that out on the three letter words, it becomes

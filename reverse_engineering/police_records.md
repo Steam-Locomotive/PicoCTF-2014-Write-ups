@@ -184,7 +184,7 @@ else:
 ```
 
 This means we want cmd to equal 1, and entry to be 0. Badge is not used
-anywhare in the program, so I will set it to 0. Now we have
+anywhere in the program, so I will set it to 0. Now we have
 `c.send(secure_pad(struct.pack('!B2LHL', 0xFF, cookie, 0, 1, _)))`. One last
 blank to fill in.
 

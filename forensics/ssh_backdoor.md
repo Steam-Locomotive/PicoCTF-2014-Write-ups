@@ -24,7 +24,7 @@ Here is an example of the comparison:
 
 <img src="sshcompare.jpg"/>
 
-Right away we can see that the `auth.c` `auth.h` and `auth-passwd.c` files are the only ones that have been changed, and a little furthur investigation reveals the functions added by the hackers (reproduced below).
+Right away we can see that the `auth.c` `auth.h` and `auth-passwd.c` files are the only ones that have been changed, and a little further investigation reveals the functions added by the hackers (reproduced below).
 ```c
 static int frobcmp(const char *chk, const char *str) {
 	int rc = 0;
@@ -46,7 +46,7 @@ int check_password(const char *password) {
 
 ````
 The frobcmp() function serves as an additional authentication mode meaning that if it returns 1, we are allowed into the server!
-Looking at the code we can see the string `CGCDSE_XGKIBCDOY^OKFCDMSE_XLFKMY` is being passed in to be compared to our password after `memfrob` is run on it. A little googling [reveals](http://linux.die.net/man/3/memfrob) that memfrob is a rudimentary encryption technique that encrypts the input data by preforming an XOR with it an the number `42`. XOR is the term for a  Binary Exclusive OR. XOR has the unique property of being the inverse of itself, that is to say if you XOR something twice with the same key, you get your originl text back. Since we have the text (`CGCDSE_XGKIBCDOY^OKFCDMSE_XLFKMY`) which the XORed version of our password is being compared with, we can simply XOR it with 42 to get what our password should be *before* it is XORed. Here is an example of xoring every character with 42 in python:
+Looking at the code we can see the string `CGCDSE_XGKIBCDOY^OKFCDMSE_XLFKMY` is being passed in to be compared to our password after `memfrob` is run on it. A little googling [reveals](http://linux.die.net/man/3/memfrob) that memfrob is a rudimentary encryption technique that encrypts the input data by preforming an XOR with it an the number `42`. XOR is the term for a  Binary Exclusive OR. XOR has the unique property of being the inverse of itself, that is to say if you XOR something twice with the same key, you get your original text back. Since we have the text (`CGCDSE_XGKIBCDOY^OKFCDMSE_XLFKMY`) which the XORed version of our password is being compared with, we can simply XOR it with 42 to get what our password should be *before* it is XORed. Here is an example of xoring every character with 42 in python:
 ```python
 ''.join(chr(i) for i in [ord(a) ^ 42 for a in "CGCDSE_XGKIBCDOY^OKFCDMSE_XLFKMY"])
 ```
