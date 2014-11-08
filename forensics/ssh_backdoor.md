@@ -23,7 +23,7 @@ Here is an example of the comparison:
 
 
 <img src="sshcompare.jpg"/>
-
+a
 Right away we can see that the `auth.c` `auth.h` and `auth-passwd.c` files are the only ones that have been changed, and a little further investigation reveals the functions added by the hackers (reproduced below).
 ```c
 static int frobcmp(const char *chk, const char *str) {
