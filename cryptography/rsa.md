@@ -32,7 +32,7 @@ One of the reasons RSA is so popular is the simplicity of the cryptosystem. Here
 5. To encrypt a message m, compute m^e mod (N)
 6. To decrypt a ciphertext c, compute c^d mod (N)
 
-Opening the `key_data.txt` file we can see that the d and n values have already been provided for us, along with the ciphertext in `ciphertext.txt`. Great! All we have to do now is compute 
+Opening the `key_data.txt` file we can see that the d and N values have already been provided for us, along with the ciphertext in `ciphertext.txt`. Great! All we have to do now is compute 
 $$
 c^d \bmod N
 $$
