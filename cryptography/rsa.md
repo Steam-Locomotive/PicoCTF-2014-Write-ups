@@ -18,7 +18,9 @@ Decrypt [RSA](http://en.wikipedia.org/wiki/RSA_(cryptosystem) given a public/pri
 
 [RSA](http://en.wikipedia.org/wiki/RSA_(cryptosystem) is a extremely popular cryptosystems which relies on [Modular arithmetic](http://en.wikipedia.org/wiki/Modular_arithmetic) for encryption and decryption.
 
-#####How does RSA work?#####
+How does RSA work?
+
+
 One of the reasons RSA is so popular is the simplicity of the cryptosystem. Here are the basic steps of RSA Encryption and Decryption.
 
 1. Choose two (usually large) primes, p and q

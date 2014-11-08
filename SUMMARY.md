@@ -12,6 +12,7 @@
    * [RSA](cryptography/rsa.md)
 * [Forensics](forensics/README.md)
    * [Pickle Jar](forensics/pickle_jar.md)
+   * [SSH Backdoor](forensics/ssh_backdoor.md)
 * [Binary Exploitation](binary_exploitation/README.md)
    * [This is the Endian](binary_exploitation/this_is_the_endian.md)
 * [Miscellaneous](miscellaneous/README.md)
