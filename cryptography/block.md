@@ -1,5 +1,5 @@
 ## Block - 130 (Cryptography) ##
-
+by ZIceZ
 ### Problem ###
 Daedalus Corp has been using this script to encrypt it's data! We think this file contains a password to their command server. Can you crack it?
 [block.py](https://picoctf.com/api/autogen/serve/block.py?static=true&pid=e1e4c8c9ccd9fc39c391da4bcd093fb2)

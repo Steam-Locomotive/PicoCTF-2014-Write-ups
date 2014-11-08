@@ -1,5 +1,5 @@
 ## ECC - 100 (Cryptography) ##
-
+by ZIceZ
 ### Problem ###
 We found a weird piece of paper with [this](https://picoctf.com/problem-static/crypto/ecc/ecc_handout.txt) written on it. I can't make heads or tails of it, but it seems to be talking about an encoded message. Can you get the message for us?
 
