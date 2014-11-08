@@ -14,9 +14,9 @@
    * [Caeser](cryptography/ceaser.md)
    * [RSA](cryptography/rsa.md)
    * [ECC](cryptography/ecc.md)
+   * [Low Entropy](cryptography/low_entropy.md)
    * [Block](cryptography/block.md)
 * [Forensics](forensics/README.md)
-<<<<<<< Updated upstream
    * [Pickle Jar](forensics/pickle_jar.md)
    * [SSH Backdoor](forensics/ssh_backdoor.md)
 * [Binary Exploitation](binary_exploitation/README.md)
