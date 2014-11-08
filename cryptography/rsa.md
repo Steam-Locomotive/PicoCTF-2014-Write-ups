@@ -13,11 +13,11 @@ This is just plain old RSA decryption.
 
 ### Overview ###
 
-Decrypt [RSA](http://en.wikipedia.org/wiki/RSA_(cryptosystem) ) given a public/private key and ciphertext.
+Decrypt [RSA](http://en.wikipedia.org/wiki/RSA_(cryptosystem\)) given a public/private key and ciphertext.
 
 ### Details ###
 
-[RSA](http://en.wikipedia.org/wiki/RSA_(cryptosystem) ) is a extremely popular cryptosystems which relies on [Modular arithmetic](http://en.wikipedia.org/wiki/Modular_arithmetic) for encryption and decryption.
+[RSA](http://en.wikipedia.org/wiki/RSA_(cryptosystem\)) is a extremely popular cryptosystems which relies on [Modular arithmetic](http://en.wikipedia.org/wiki/Modular_arithmetic) for encryption and decryption.
 
 How does RSA work?
 
