@@ -1,0 +1,68 @@
+Here is where it all unfurls
+j->u
+x->z
+z->g
+v->b
+a->s
+f->c
+u->l
+l->p
+t->d
+o->f?
+
+Thirteen-letter words
+100.0     AjTHORIxATION -> AuTHORIzATION
+
+Eight-letter words
+12.5      zRINNINz -> GRINNING
+12.5      agfAnORE -> S_CA_ORE
+12.5      IzNORANT -> IGNORANT
+12.5      WHATEVER
+12.5      vROTHERa -> BROTHERS
+12.5      ajNaWEET -> SUNSWEET
+12.5      fREATjRE -> CREATURE
+12.5      aTRANzER -> STRANGER
+
+Seven-letter words
+20.0      aKINNEt -> SKINNED
+20.0      vERRIEa -> BERRIES
+20.0      WHETHER
+20.0      oRIENta -> _RIEN_S
+20.0      zRINNEt -> GRINNED?
+
+Six-letter words
+16.0      fOuORa -> COLORS?
+12.0      lEOluE -> PEOPLE
+8.0       VOIfEa -> VOICES
+8.0       aAVAzE -> SAVAGE
+4.0       oOREaT -> FOREST?
+4.0       THEgRE
+4.0       THINza -> THINGS
+4.0       AROjNt -> AROUND
+4.0       luAfEa -> PLACES?
+4.0       fIRfuE -> CIR_VE?
+
+Five-letter words
+14.6      NEVER
+9.8       gOjuu -> _OULL
+9.8       THINK
+9.8       EARTH
+9.8       lAINT -> PAINT
+4.9       aTIuu -> STILL
+2.4       uEARN -> lEARN
+2.4       gOjVE -> _OUVE
+2.4       EVERg
+2.4       jNTIu -> UNTIL
+
+Four-letter words
+8.8       WITH
+5.9       KNOW
+5.9       WINt
+4.4       fOnE -> CO_E
+2.9       WOuo -> WOLF
+2.9       NEEt -> NEED
+2.9       fORN
+2.9       aINz -> SAING
+2.9       tONT -> DONT
+2.9       THAT
+Is SAING a word?

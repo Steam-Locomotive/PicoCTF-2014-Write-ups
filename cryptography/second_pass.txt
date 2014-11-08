@@ -1,0 +1,83 @@
+k->n
+c->o
+d->k?
+s->v?
+w->r?
+
+One-letter words
+70.0      A
+30.0      I
+
+Two-letter words
+20.5      co -> OF
+11.4      Tc -> TO?
+9.1       WE
+9.1       Ia
+6.8       ac -> _O
+6.8       Ik -> IN|IS|IF -> IN?
+6.8       Io
+4.5       IT
+4.5       vE
+4.5       ng
+
+Three-letter words
+31.5      THE
+18.5      gcj
+9.3       Auu
+9.3       Akt -> AN_|AS_|AF_ -> AND
+6.5       fAk
+5.6       AwE
+2.8       cWk -> OWN|OWS|OWF -> OWN
+2.8       HAa
+1.9       ocw -> _OR
+1.9       fwg
+Seems to confirm k -> N and c -> O
+
+Four-letter words
+8.8       WITH
+5.9       dkcW -> _NOW -> KNOW?
+5.9       WIkt -> WIND?
+4.4       fcnE
+2.9       Wcuo
+2.9       kEEt -> NEED?
+2.9       fcwk -> _ORK
+2.9       aIkz
+2.9       tckT -> _ONT
+2.9       THAT
+
+Five-letter words
+14.6      kEsEw -> NEVER
+9.8       gcjuu
+9.8       THIkd -> THINK
+9.8       EAwTH -> EARTH
+9.8       lAIkT
+4.9       aTIuu
+2.4       uEAwk
+2.4       gcjsE
+2.4       EsEwg -> EVER
+2.4       jkTIu
+Ever and never are consistent.
+
+Single letter frequency
+12.3      E      (given as 12.7)
+9.8       c -> O (given as 7.5)
+9.0       T      (given as 9.1)
+8.4       k -> N (given as 6.7)
+7.2       A      (given as 8.2)
+7.1       H      (given as 6.1)
+5.9       w
+5.8       I
+5.1       u
+4.1       a
+3.5       W
+3.5       j
+3.2       f
+2.8       g
+2.8       t
+1.7       o
+1.5       n
+1.4       l
+1.3       d
+1.3       s
+This makes the claim c -> O and k -> N seem dubious.
+The all of the decoding in the second pass is based on this claim.
