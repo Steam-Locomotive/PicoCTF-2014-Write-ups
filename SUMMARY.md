@@ -8,6 +8,7 @@
    * [Internet Inspection](web_exploitation/internet_inspection.md)
    * [Injection 1](web_exploitation/injection_1.md)
    * [Injection 2](web_exploitation/injection_2.md)
+   * [Injection 4](web_exploitation/injection_4.md)
 * [Cryptography](cryptography/README.md)
    * [Caesar](cryptography/caesar.md)
    * [The Valley of Fear](cryptography/the_valley_of_fear.md)
