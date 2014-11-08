@@ -9,7 +9,7 @@ give you access to their directory information. Thankfully you found the
 interact with the server and find the duplicated badge number! The flag is the
 badge number.
 
-The server is running on vuln2014.picoctf.com:21212.
+The server is running on `vuln2014.picoctf.com:21212`.
 
 ### Hint ###
 
@@ -67,7 +67,8 @@ c.connect((HOST, PORT))
 c.send(struct.pack('!i', 0xAA))
 ```
 
-Now I turn my attention to the `secure_send` function.
+Now I turn my attention to the `secure_send` function. The server uses it to
+send stuff to me
 
 ```python
 # directory_server.py
@@ -162,8 +163,10 @@ else:
 ```
 
 We want to go to the else branch of the if statement. We need magic to equal
-0xFF, and user_cookie to equal the previous cookie. To implement this, we need
-to do `c.send(secure_pad(struct.pack('!B2LHL', 0xFF, cookie, _, _, _)))`
+`0xFF`, and `user_cookie` to equal the previous cookie. We also need to make sure
+that it we are using `secure_pad`, since the server is using `remove_pad` To
+implement this, we need to do `c.send(secure_pad(struct.pack('!B2LHL', 0xFF,
+cookie, _, _, _)))`
 
 We still need to fillin the blanks. To do that, we need to see how badge, cmd,
 and entry are used in the server's code.
@@ -240,4 +243,5 @@ You can see the whole script [here](directory_client.py). The 903th entry is
 duplicated.
 
 #### Flag ####
+
 1430758
