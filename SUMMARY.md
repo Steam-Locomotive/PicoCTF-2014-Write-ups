@@ -10,6 +10,7 @@
    * [Injection 1](web_exploitation/injection_1.md)
    * [Potentially Hidden Password](web_exploitation/potentially_hidden_password.md)
    * [secure_page_service](web_exploitation/secure_page_service.md)
+   * [Make a Face](web_exploitation/make_a_face.md)
    * [Injection 2](web_exploitation/injection_2.md)
    * [Injection 4](web_exploitation/injection_4.md)
 * [Cryptography](cryptography/README.md)
