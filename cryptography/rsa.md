@@ -48,7 +48,7 @@ def int2Text(number, size):
 ```
 Which gives us `Congratulations on decrypting an RSA message! Your flag is modular_arithmetics_not_so_bad_after_all`.
 
-For furthur information on RSA, [here](http://crypto.stanford.edu/~dabo/papers/RSA-survey.pdf) is a great resource.
+For further information on RSA, [here](http://crypto.stanford.edu/~dabo/papers/RSA-survey.pdf) is a great resource.
 ### Flag ###
 
 modular_arithmetics_not_so_bad_after_all

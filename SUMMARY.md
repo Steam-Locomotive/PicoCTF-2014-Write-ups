@@ -2,7 +2,6 @@
 
 * [Introduction](README.md)
 * [Reverse Engineering](reverse_engineering/README.md)
-   * [Function Address](reverse_engineering/function_address.md)
    * [Cyborg Secrets](reverse_engineering/cyborg_secrets.md)
 * [Web Exploitation](web_exploitation/README.md)
    * [No Comment](web_exploitation/no_comment.md)
@@ -12,7 +11,6 @@
 * [Cryptography](cryptography/README.md)
    * [Caesar](cryptography/caesar.md)
    * [The Valley of Fear](cryptography/the_valley_of_fear.md)
->>>>>>> 3449c60fa170221d2f4d40363a8aba1bdd866762
    * [RSA](cryptography/rsa.md)
    * [ECC](cryptography/ecc.md)
    * [Low Entropy](cryptography/low_entropy.md)
@@ -21,7 +19,6 @@
    * [Pickle Jar](forensics/pickle_jar.md)
    * [SSH Backdoor](forensics/ssh_backdoor.md)
 * [Binary Exploitation](binary_exploitation/README.md)
-   * [This is the Endian](binary_exploitation/this_is_the_endian.md)
 * [Miscellaneous](miscellaneous/README.md)
    * [Tyrannosaurus Hex](miscellaneous/tyrannosaurus_hex.md)
 
