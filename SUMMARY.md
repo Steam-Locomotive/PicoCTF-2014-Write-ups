@@ -11,7 +11,7 @@
    * [Injection 4](web_exploitation/injection_4.md)
 * [Cryptography](cryptography/README.md)
    * [Caesar](cryptography/caesar.md)
-   * [The Valley of Fear](cryptography/the_valley_of_fear)
+   * [The Valley of Fear](cryptography/the_valley_of_fear.md)
    * [RSA](cryptography/rsa.md)
    * [ECC](cryptography/ecc.md)
    * [Low Entropy](cryptography/low_entropy.md)
