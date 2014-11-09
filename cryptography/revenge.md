@@ -29,7 +29,7 @@ In our problem, the service checks the the following components in a signature t
 The length of the signature can be up to 768 characters long or 3072 bits long.
 The exploit discovered by Bleichenbacher takes the advantage of the fact that the server doesn't check that the hash is the last thing in the signature. Rahter it only checks the conditions mentioned above. Following the format, an adversary has a lot of room to work with by placing junk data in (garbage) to forge a signature that satisfies the requirements.
 
-We know that the public key is 3, so our forged signature has to be a number that when taken to the power of 3 will matches the format above. We can work backward to find this number by find a number that fits the format and is a perfect cube then simply take the cube of that number for our forged signature.
+We know that the public key is 3, so our forged signature has to be a number that when taken to the power of 3 will matches the format above. We can work backward to find this number by finding a number that fits the format and is a perfect cube then simply take the cube root of that number for our forged signature.
 Bleichenbacher did this already for us already, and you can read more on that [here](http://www.imc.org/ietf-openpgp/mail-archive/msg06063.html). Let modify his formula a bit so it will fit our problem.
 
 Let have the required section of our message (168 bits long) be equal to D:
@@ -45,7 +45,7 @@ Then our formula is just:
 $$2^{3057} - N*2^{2072} + garbage $$
 If we use our knowledge from Algebra,
 $$ (A-B)^3 = A^3 - 3A^2B + 3AB^2 - B^3$$
-Playing around with the number a little bit, our formula can be fit into our cubic expansion. Then we can solve for (A-B) giving us:
+Playing around with the number a little bit, our formula can be fit into the cubic expansion. Then we can solve for (A-B) giving us:
 $$
 2^{1019} - \frac{N*2^{34}}{3}
 $$
