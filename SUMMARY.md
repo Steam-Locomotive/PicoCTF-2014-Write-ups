@@ -27,6 +27,7 @@
    * [Snapcat](forensics/snapcat.md)
    * [SSH Backdoor](forensics/ssh_backdoor.md)
 * [Binary Exploitation](binary_exploitation/README.md)
+   * [Format](binary_exploitation/format.md)
    * [Execute Me](binary_exploitation/execute_me.md)
    * [OBO](binary_exploitation/OBO.md)
 * [Miscellaneous](miscellaneous/README.md)
