@@ -1,5 +1,5 @@
 ## Low Entropy - 110 (Cryptography) ##
-####writeup by Oksisane
+#### Writeup by Oksisane
 
 ### Problem ###
 
@@ -52,4 +52,4 @@ print c/gcd(test_num,c)
 ```
 ### Flag ###
 
-make_sure_your_rng_generates_lotsa_primes
+    make_sure_your_rng_generates_lotsa_primes

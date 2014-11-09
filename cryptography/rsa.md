@@ -1,5 +1,5 @@
 ## RSA - 80 (Cryptography) ##
-####writeup by Oksisane
+####Writeup by Oksisane
 
 ### Problem ###
 
@@ -56,5 +56,5 @@ Which gives us `Congratulations on decrypting an RSA message! Your flag is modul
 For further information on RSA, [here](http://crypto.stanford.edu/~dabo/papers/RSA-survey.pdf) is a great resource.
 ### Flag ###
 
-modular_arithmetics_not_so_bad_after_all
+    modular_arithmetics_not_so_bad_after_all
 

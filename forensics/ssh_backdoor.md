@@ -1,5 +1,5 @@
 ## SSH Backdoor - 100 (Forensics) ##
-####writeup by Oksisane
+####Wwriteup by Oksisane
 
 ### Problem ###
 
@@ -57,4 +57,4 @@ ssh jon@backdoor.picoctf.com
 Once we are in, we simply `cat flag.txt` which prints the flag to our console!
 ### Flag ###
 
-ssshhhhh_theres_a_backdoor
+    ssshhhhh_theres_a_backdoor

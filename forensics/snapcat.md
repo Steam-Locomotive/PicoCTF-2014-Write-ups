@@ -1,5 +1,5 @@
 ## Snapcat - 80 (Forensics) ##
-####writeup by Oksisane
+####Writeup by Oksisane
 
 ### Problem ###
 
@@ -35,4 +35,4 @@ Here are few other cat pictures included in the `disk.img` by the Daedalus emplo
 <img src="cat3.jpg"/>
 ### Flag ###
 
-i_can_has_cheezburger
+    i_can_has_cheezburger

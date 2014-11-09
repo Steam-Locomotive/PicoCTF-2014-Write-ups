@@ -1,5 +1,5 @@
 ## Police Records - 140 (reverse engineering) ##
-#### writeup by Gladius Maximus
+#### Writeup by Gladius Maximus
 
 ### Problem ###
 
@@ -22,7 +22,7 @@ You are going to have to understand
 
 Write a client in a language of choice (python for me) that interacts with the
 server and grabs data. You have to look at the source code for the server and
-reverse engineer a proper client. 
+reverse engineer a proper client.
 
 ### Details ###
 
@@ -107,7 +107,7 @@ the message is a multiple of 16. It xors that with a random key.
 Intermission for cryptography. For any $a$ and $b$, $a \oplus b$ \oplus b = a$
 ($\oplus$ stands for xor). xor has the special property that if $a \oplus b =
 c$, then $a \oplus c = b$. This means xor is its own inverse. That will come in
-handy later. 
+handy later.
 
 If I want to remove the padding, since I know exactly the first five bytes, I
 xor them with the first five elements of buffer. Since the ciphertext, $c$, was
@@ -223,7 +223,7 @@ Now we write python code to put it all together. This is the fun part.
 entries = set()
 entry = 0
 for entry in itertools.count(0):
-    c.send(secure_pad(struct.pack('!B2LHL', 0xFF, cookie, 0, 1, entry))) 
+    c.send(secure_pad(struct.pack('!B2LHL', 0xFF, cookie, 0, 1, entry)))
     resp = c.recv(1024)
     cookie, msg = decode(resp)
     try:
@@ -235,7 +235,7 @@ for entry in itertools.count(0):
     if f['BADGE'] in entries:
         print (entry, f)
     entries.add(f['BADGE'])
-    
+
 print (entry)
 ```
 
@@ -244,4 +244,4 @@ duplicated.
 
 #### Flag ####
 
-1430758
+    1430758

@@ -1,5 +1,5 @@
 ## Cyborg Secrets - 80 (Reverse Engineering) ##
-####writeup by Oksisane
+####Writeup by Oksisane
 
 ### Problem ###
 
@@ -21,5 +21,5 @@ The hint indicates that the password is hardcoded into the program. Opening the 
 
 ### Flag ###
 
-403-shutdown-for-what
+    403-shutdown-for-what
 

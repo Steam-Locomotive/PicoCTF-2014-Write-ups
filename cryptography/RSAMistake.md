@@ -1,5 +1,5 @@
 ## RSA Mistakes - 200 (Cryptography) ##
-by ZIceZ
+####Writeup by ZIceZ
 ### Problem ###
 Daedalus Corp seems to have had a very weird way of broadcasting some secret data. [We managed to find the server code that broadcasted it, and one of our routers caught some of their traffic](https://picoctf.com/problem-static/crypto/rsa-mistakes/handout.zip) - can you find the secret data? We think someone may have requested the secret using someone else's user id by accident, but we're not sure.
 
@@ -89,6 +89,6 @@ while run:
 realmessage = messagemess*actuala-b1
 n2s(int(realmessage))
 ```
+Which reveals the message: 'Wow! Your flag is: did_you_know_you_can_sometimes_gcd_outside_a_euclidean_domaipi'
 ### Flag ###
-'Wow! Your flag is: did_you_know_you_can_sometimes_gcd_outside_a_euclidean_domaipi'
-
+    did_you_know_you_can_sometimes_gcd_outside_a_euclidean_domaipi
