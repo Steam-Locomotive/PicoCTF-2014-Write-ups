@@ -33,7 +33,7 @@ complimentary to `struct.unpack`, which does the opposite.
 
 #### Accessing the server ####
 
-If you look at there code,
+If you look at their code,
 
 ```python
 # from directory_server.py
