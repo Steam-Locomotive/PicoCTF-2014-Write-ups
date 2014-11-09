@@ -59,8 +59,8 @@ Meet in the middle attack:
 
     Text ----- some key 1 ----> (something) == (something) <------ some key 2 ---- Ciphertext
 
-Instead of doing $2^48$ calculations, we have essentially done two $2^24$
-calculations instead which is only $2^25$ calculations. However, this takes
+Instead of doing $$2^{48}$$ calculations, we have essentially done two $$2^{24}$$
+calculations instead which is only $$2^{25}$$ calculations. However, this takes
 much more memory. On my computer it takes a few gigabytes, as opposed
 to straight decryption, which takes less than one megabyte. It is an example of
 a [space-time trade off](http://en.wikipedia.org/wiki/Space%E2%80%93time_tradeoff).
