@@ -22,6 +22,7 @@
    * [Low Entropy](cryptography/low_entropy.md)
    * [Block](cryptography/block.md)
    * [Web Interception](cryptography/web_interception.md)
+   * [Revenge of the Bleichenbacher](cryptography/revenge.md)
    * [RSA Mistakes](cryptography/RSAMistake.md)
 * [Forensics](forensics/README.md)
    * [Snapcat](forensics/snapcat.md)
