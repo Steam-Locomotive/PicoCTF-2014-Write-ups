@@ -3,7 +3,7 @@
 
 Created: 2014-11-08 00:49:29
 
-Last modified: 2014-11-09 23:28:11
+Last modified: [2014-11-10 11:00:49](https://github.com/Oksisane/PicoCTF-2014-Writeups/commits/master/cryptography/web_interception.md)
 
 
 
