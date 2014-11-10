@@ -58,7 +58,7 @@ def run():
             file_obj.write(file_contents)
 
 commit_msg = str(git('--no-pager', 'show', 'HEAD', '--format="%s"', '-s')).strip()
-if 'dates bot' in commit_msg:
+if 'dates bot' not in commit_msg:
     print ('working on commit: {commit_msg!r}'.format(**locals()))
     run()
     try:
