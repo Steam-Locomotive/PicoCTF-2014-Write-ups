@@ -100,6 +100,8 @@ Here is the interesting part: if I send 11 bytes of filler text, I can finish
 off the block started by `GET /`. Then after that, I can send 15 bytes of
 `A`. Then I can send 15 more `A`. Then the block will look like:
 
+                                                                            Secret starts here
+                                                                            V
     G E T   / A A A A A A A A A A | A A A A A A A A A A A A A A A A A A A A 1 | 2 3 4 ...
     ^                             ^                                           ^
 	First block                   Second block                                Third block
@@ -111,18 +113,23 @@ sent this request, I should store the second block of the result.
 Now lets say I send another block. This time I send 15 `A` followed by 15 more
 `A`, but after that put in a character, call it `i`. that looks like this:
 
+                                                                                Secret starts here
+                                                                                V
     G E T   / A A A A A A A A A A | A A A A A A A A A A A A A A A A A A A A i | 1 2 3 ...
     ^                             ^                                           ^
 	First block                   Second block                                Third block
 
-If `i` is the first character of the message, they should encrypt to the same
-thing. Thus, I can set a counter to go through from i = 0 to 255 and break when
-the second block of the encrypted text equals the second block of the old
-encrypted text. This can give me the first byte of the message.
+If `i` is the first character of the message, then the plaintext blocks are
+exactly the same, so they should encrypt to the same thing. Thus, I can set a
+counter to go through from i = 0 to 255 and break when the second block of the
+encrypted text equals the second block of the old encrypted text. This can give
+me the first byte of the message.
 
 Now I can do this for the second one too. I need to record the second block of this
 result:
 
+                                                                          Secret starts here                                                                          starts here
+                                                                          V
     G E T   / A A A A A A A A A A | A A A A A A A A A A A A A A A A A A A 1 2 | 3 4 5 ...
     ^                             ^                                           ^
 	First block                   Second block                                Third block
@@ -130,7 +137,9 @@ result:
 And then since I know the first character of the secret from the previous round, I
 can put that in the message after the As
 
-    G E T   / A A A A A A A A A A | A A A A A A A A A A A A A A A A A A A 1 i | 3 4 5 ...
+                                                                                Secret starts here
+                                                                                V
+    G E T   / A A A A A A A A A A | A A A A A A A A A A A A A A A A A A A 1 i | 1 2 3  ...
     ^                             ^                                           ^
 	First block                   Second block                                Third block
 
@@ -156,25 +165,32 @@ for i in range(0, 16):
 That should yield the first block of the secret: `' HTTP/1.1\r\nCooki'`. That
 looks a lot like an HTTP request. Seeing this, I have written the alphabet that
 includes all ascii characters in the order of prominence (as predicted). This
-new alphabet increases the speed at which we are ablet o get characters,
-because the common characters are at the front.
+new alphabet increases the speed at which we are able to get characters,
+because the common characters get guessed first.
 
 If you want to start getting the second block, you simply look at the third
 block when it has 15 characters you know, and 1 you don't. You have to get the
 key sequentially. Lets say you already know 15 letters via the method described
 above.
 
+                                    Secret starts here
+                                    V
     G E T   / A A A A A A A A A A | 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 | 17 18 ...
     ^                             ^                                           ^
 	First block                   Second block                                Third block
 
-Then you remember the second block of the return. Rember that you already know the first 15 letters from the previous method. You simply send those 15 letters back to the server plus another letter.
+Then you remember the second block of the return. Rember that you already know
+the first 15 letters from the previous method. You simply send those 15 letters
+back to the server plus another letter.
 
+                                                                            Secret starts here
+                                                                            V
     G E T   / A A A A A A A A A A | 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 i | 1 2 3 ...
     ^                             ^                                         ^
 	First block                   Second block                              Third block
 
-	Where the user input is 11 As, the first 15 letters of the secret, and a guess i.
+Where the user input is 11 `A`, the first 15 letters of the secret, and a guess
+`i`. The real secret get appended ongo that
 
 ```python
 for i in range(16, 32):
@@ -199,60 +215,9 @@ flag, piece by piece:
 ' HT'
 ' HTT'
 ' HTTP'
-' HTTP/'
-' HTTP/1'
-' HTTP/1.'
-' HTTP/1.1'
-' HTTP/1.1\r'
-' HTTP/1.1\r\n'
-' HTTP/1.1\r\nC'
-' HTTP/1.1\r\nCo'
-' HTTP/1.1\r\nCoo'
-' HTTP/1.1\r\nCook'
-' HTTP/1.1\r\nCooki'
-' HTTP/1.1\r\nCookie'
-' HTTP/1.1\r\nCookie:'
-' HTTP/1.1\r\nCookie: '
-' HTTP/1.1\r\nCookie: f'
-' HTTP/1.1\r\nCookie: fl'
-' HTTP/1.1\r\nCookie: fla'
-' HTTP/1.1\r\nCookie: flag'
-' HTTP/1.1\r\nCookie: flag='
-' HTTP/1.1\r\nCookie: flag=c'
-' HTTP/1.1\r\nCookie: flag=co'
-' HTTP/1.1\r\nCookie: flag=con'
-' HTTP/1.1\r\nCookie: flag=cong'
-' HTTP/1.1\r\nCookie: flag=congr'
-' HTTP/1.1\r\nCookie: flag=congra'
-' HTTP/1.1\r\nCookie: flag=congrat'
-' HTTP/1.1\r\nCookie: flag=congrats'
-' HTTP/1.1\r\nCookie: flag=congrats_'
-' HTTP/1.1\r\nCookie: flag=congrats_o'
-' HTTP/1.1\r\nCookie: flag=congrats_on'
-' HTTP/1.1\r\nCookie: flag=congrats_on_'
-' HTTP/1.1\r\nCookie: flag=congrats_on_y'
-' HTTP/1.1\r\nCookie: flag=congrats_on_yo'
-' HTTP/1.1\r\nCookie: flag=congrats_on_you'
-' HTTP/1.1\r\nCookie: flag=congrats_on_your'
-' HTTP/1.1\r\nCookie: flag=congrats_on_your_'
-' HTTP/1.1\r\nCookie: flag=congrats_on_your_f'
-' HTTP/1.1\r\nCookie: flag=congrats_on_your_fi'
-' HTTP/1.1\r\nCookie: flag=congrats_on_your_fir'
-' HTTP/1.1\r\nCookie: flag=congrats_on_your_firs'
-' HTTP/1.1\r\nCookie: flag=congrats_on_your_first'
-' HTTP/1.1\r\nCookie: flag=congrats_on_your_first_'
-' HTTP/1.1\r\nCookie: flag=congrats_on_your_first_e'
-' HTTP/1.1\r\nCookie: flag=congrats_on_your_first_ec'
-' HTTP/1.1\r\nCookie: flag=congrats_on_your_first_ecb'
-' HTTP/1.1\r\nCookie: flag=congrats_on_your_first_ecb_'
-' HTTP/1.1\r\nCookie: flag=congrats_on_your_first_ecb_d'
-' HTTP/1.1\r\nCookie: flag=congrats_on_your_first_ecb_de'
-' HTTP/1.1\r\nCookie: flag=congrats_on_your_first_ecb_dec'
-' HTTP/1.1\r\nCookie: flag=congrats_on_your_first_ecb_decr'
-' HTTP/1.1\r\nCookie: flag=congrats_on_your_first_ecb_decry'
-' HTTP/1.1\r\nCookie: flag=congrats_on_your_first_ecb_decryp'
-' HTTP/1.1\r\nCookie: flag=congrats_on_your_first_ecb_decrypt'
-' HTTP/1.1\r\nCookie: flag=congrats_on_your_first_ecb_decrypti'
+
+...
+
 ' HTTP/1.1\r\nCookie: flag=congrats_on_your_first_ecb_decryptio'
 ' HTTP/1.1\r\nCookie: flag=congrats_on_your_first_ecb_decryption'
 ' HTTP/1.1\r\nCookie: flag=congrats_on_your_first_ecb_decryption\r'
@@ -267,5 +232,3 @@ I am not sure why it does not find an answer for 63. Perhaps I got the length of
 ### Flag ###
 
     congrats_on_your_first_ecb_decryption
-
-p
