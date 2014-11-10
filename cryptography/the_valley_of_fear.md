@@ -1,7 +1,7 @@
 ## The Valley of Fear - 20 (Cryptography) ##
 ####Writeup by evantey14
 Created: 2014-11-07 22:50:06
-Last modified: 2014-11-09 22:28:37
+Last modified: 2014-11-09 22:28:42
 
 ### Problem
 The hard drive may be corrupted, but you were able to recover a [small chunk of text](https://picoctf.com/problem-static/crypto/the-valley-of-fear/book.txt). Scribbled on the back of the hard drive is a set of mysterious numbers. Can you discover the meaning behind these numbers? (1, 9, 4) (4, 2, 8) (4, 8, 3) (7, 1, 5) (8, 10, 1)
