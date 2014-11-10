@@ -64,6 +64,11 @@ commit_msg = str(git('--no-pager', 'show', 'HEAD', '--format="%s"', '-s')).strip
 if 'dates bot' not in commit_msg:
     print ('working on commit: {commit_msg!r}'.format(**locals()))
     run()
-    a = git('commit', '--all', '--message=dates bot', _err=print)
+    try:
+        git('commit', '--all', '--message=dates bot', _err=print)
+    except:
+        print ('maybe something messed up, committing hurts')
+        pass
     git('push')
+    print ('jk, nothing messed up, pushing fine')
  
