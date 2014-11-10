@@ -3,7 +3,7 @@
 
 Created: 2014-11-07 21:52:29
 
-Last modified: 2014-11-09 23:09:55
+Last modified: 2014-11-09 23:28:10
 
 ### Problem ###
 
@@ -38,7 +38,7 @@ three characters at a time.
 A special trait of substitution-permutation network is that even if an
 adversary obtains the text and the cipher text it's still impossible to figure
 out the key used to encrypted. Thus, we have to brute force the key, but a key
-in this case is only $$ 2^{24} $$ 
+in this case is only $$ 2^{24} $$
 bits long which is very brute force-able. Although,
 the encryption uses two keys, so one would think that $$ 2^{48} $$ calculation is
 needed crack the key. This is where

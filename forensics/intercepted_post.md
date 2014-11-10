@@ -3,27 +3,8 @@
 
 Created: 2014-11-09 19:42:47
 
-Last modified: 2014-11-09 23:09:56
+Last modified: 2014-11-09 23:28:11
 
-
-Created: 2014-11-09 19:42:47
-
-Last modified: 2014-11-09 23:02:57
-
-
-Created: 2014-11-09 19:42:47
-
-Last modified: 2014-11-09 23:02:50
-
-
-Created: 2014-11-09 19:42:47
-
-Last modified: 2014-11-09 23:02:46
-
-
-Created: 2014-11-09 19:42:47
-
-Last modified: 2014-11-09 23:01:36
 
 
 ### Problem ###
