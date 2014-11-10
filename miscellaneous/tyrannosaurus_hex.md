@@ -9,6 +9,8 @@ In Emacs, do Ctrl+x f 79 RET Alt+x auto-fill-mode RET, then do Alt-q to realign 
 
 ## Tyrannosaurus Hex - 10 (Miscellaneous) ##
 #### Writeup by Gladius Maximus
+Created: 2014-11-07 09:27:46
+Last modified: 2014-11-09 22:28:42
 
 ### Problem ###
 
