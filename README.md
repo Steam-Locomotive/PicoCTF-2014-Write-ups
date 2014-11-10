@@ -25,8 +25,13 @@ We are Steam Locomotive, a team of 5 high school students from the [Liberal Arts
 
 During PicoCTF 2014, we accumulated a total of 4985 points and finished in 18th place.
 
+We are also extremely appreciative of the members of our sister teams at the Liberal Art Science Academy that have contributed writups. They are:
+
+* Ashwin Gupta - [Shwinn](https://github.com/Shwinn)
+
+
 This [GitBook](http://gitbook.io)'s goal is to contain a comprehensive set of write-ups for all of the challenges in PicoCTF 2014, complete with each problem, explanation of its solution, and the flag. It is a constant work in progress, so if a write up is not posted immediately, don't worry! We are working as fast as possible to add all of the problems, and should have them done within a couple weeks.
 
-We'd would like to thank the creators of PicoCTF for the competition, all the participants of PicoCTF, and our sister team, Team Evan, for contributing to the write-ups.
+We'd would like to thank the creators of PicoCTF, [Plaid Parliment of Pwning](http://ppp.cylab.cmu.edu/wordpress/) and [Team Daedalus](http://www.etc.cmu.edu/blog/projects/deadalus/) for the competition and all the participants of PicoCTF for making it a blast! A special shout out also goes out to [HSCTF](http://hsctf.com/) whose own GitBook inspired this one.
 
 If you found these writeups helpful, be sure to star the repository [on Github](https://github.com/Oksisane/PicoCTF-2014-Writeups)!

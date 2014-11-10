@@ -3,7 +3,7 @@
 
 Created: 2014-11-07 23:22:41
 
-Last modified: 2014-11-09 23:09:55
+Last modified: [2014-11-10 00:54:51](https://github.com/Oksisane/PicoCTF-2014-Writeups/commits/master/cryptography/RSAMistake.md)
 
 ### Problem ###
 Daedalus Corp seems to have had a very weird way of broadcasting some secret data. [We managed to find the server code that broadcasted it, and one of our routers caught some of their traffic](https://picoctf.com/problem-static/crypto/rsa-mistakes/handout.zip) - can you find the secret data? We think someone may have requested the secret using someone else's user id by accident, but we're not sure.
@@ -97,3 +97,4 @@ n2s(int(realmessage))
 Which reveals the message: 'Wow! Your flag is: did_you_know_you_can_sometimes_gcd_outside_a_euclidean_domaipi'
 ### Flag ###
     did_you_know_you_can_sometimes_gcd_outside_a_euclidean_domaipi
+
