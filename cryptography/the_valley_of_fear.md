@@ -6,25 +6,6 @@ Created: 2014-11-07 22:50:06
 Last modified: 2014-11-09 23:09:56
 
 
-Created: 2014-11-07 22:50:06
-
-Last modified: 2014-11-09 23:02:57
-
-
-Created: 2014-11-07 22:50:06
-
-Last modified: 2014-11-09 23:02:50
-
-
-Created: 2014-11-07 22:50:06
-
-Last modified: 2014-11-09 23:02:46
-
-
-Created: 2014-11-07 22:50:06
-
-Last modified: 2014-11-09 23:01:35
-
 
 ### Problem
 The hard drive may be corrupted, but you were able to recover a [small chunk of text](https://picoctf.com/problem-static/crypto/the-valley-of-fear/book.txt). Scribbled on the back of the hard drive is a set of mysterious numbers. Can you discover the meaning behind these numbers? (1, 9, 4) (4, 2, 8) (4, 8, 3) (7, 1, 5) (8, 10, 1)

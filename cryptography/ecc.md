@@ -6,25 +6,6 @@ Created: 2014-11-07 21:04:18
 Last modified: 2014-11-09 23:09:55
 
 
-Created: 2014-11-07 21:04:18
-
-Last modified: 2014-11-09 23:02:57
-
-
-Created: 2014-11-07 21:04:18
-
-Last modified: 2014-11-09 23:02:50
-
-
-Created: 2014-11-07 21:04:18
-
-Last modified: 2014-11-09 23:02:45
-
-
-Created: 2014-11-07 21:04:18
-
-Last modified: 2014-11-09 23:01:35
-
 
 ### Problem ###
 We found a weird piece of paper with [this](https://picoctf.com/problem-static/crypto/ecc/ecc_handout.txt) written on it. I can't make heads or tails of it, but it seems to be talking about an encoded message. Can you get the message for us?

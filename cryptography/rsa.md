@@ -6,24 +6,6 @@ Created: 2014-11-07 19:13:48
 Last modified: 2014-11-09 23:09:55
 
 
-Created: 2014-11-07 19:13:48
-
-Last modified: 2014-11-09 23:02:57
-
-
-Created: 2014-11-07 19:13:48
-
-Last modified: 2014-11-09 23:02:50
-
-
-Created: 2014-11-07 19:13:48
-
-Last modified: 2014-11-09 23:02:45
-
-
-Created: 2014-11-07 19:13:48
-
-Last modified: 2014-11-09 23:01:35
 
 
 ### Problem ###

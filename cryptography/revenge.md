@@ -1,5 +1,5 @@
 ## Revenge of the Bleichenbacher - 170 ##
-#### Writeup by ZIceZ and Oksisane #### 
+#### Writeup by ZIceZ and Oksisane ####
 
 ### Problem ###
 We found a Daedalus Corp command server, that lets people read some shared files. But it requires cryptographically signed commands! Can you forge a signature for us? It's running at vuln2014.picoctf.com. The JAR file for the service is [here](https://picoctf.com/problem-static/crypto/revenge-of-the-bleichenbacher/CommandServer.jar).
