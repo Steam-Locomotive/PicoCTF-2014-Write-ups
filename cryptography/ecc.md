@@ -1,5 +1,5 @@
 ## ECC - 100 (Cryptography) ##
-####writeup by ZIceZ
+####Writeup by ZIceZ
 
 ### Problem ###
 We found a weird piece of paper with [this](https://picoctf.com/problem-static/crypto/ecc/ecc_handout.txt) written on it. I can't make heads or tails of it, but it seems to be talking about an encoded message. Can you get the message for us?
@@ -37,5 +37,5 @@ print STR(828669833265826932708578)
 ```
 
 ### Flag ###
-ELLIPTIC CURVES ARE FUN
+    ELLIPTIC CURVES ARE FUN
 

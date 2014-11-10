@@ -1,5 +1,5 @@
 ## Low Entropy - 110 (Cryptography) ##
-####writeup by Oksisane
+#### Writeup by Oksisane
 
 ### Problem ###
 
@@ -16,12 +16,12 @@ We're pretty sure that 30 total possible primes is low enough that we should be 
 
 ### Overview ###
 
-Factor the given publickey since we have only 30 primes, then use the factors to compute the private key and decrypt the messsge.
+Factor the given publickey since we have only 30 primes, then use the factors to compute the private key and decrypt the message.
 
 ### Details ###
 For the purposes of this solution, I am going to assume you are familiar with the basics of the RSA encryption/decryption
 
-In this problem we are given a server which generates RSA moduli and are told that there are only 30 possible primes that the server uses to genereate them. First, we copy the given modulus `0xc20a1d8b3903e1864d14a4d1f32ce57e4665fc5683960d2f7c0f30d5d247f5fa264fa66b49e801943ab68be3d9a4b393ae22963888bf145f07101616e62e0db2b04644524516c966d8923acf12af049a1d9d6fe3e786763613ee9b8f541291dcf8f0ac9dccc5d47565ef332d466bc80dc5763f1b1139f14d3c0bae072725815f` and the cipher text
+In this problem we are given a server which generates RSA moduli and are told that there are only 30 possible primes that the server uses to generate them. First, we copy the given modulus `0xc20a1d8b3903e1864d14a4d1f32ce57e4665fc5683960d2f7c0f30d5d247f5fa264fa66b49e801943ab68be3d9a4b393ae22963888bf145f07101616e62e0db2b04644524516c966d8923acf12af049a1d9d6fe3e786763613ee9b8f541291dcf8f0ac9dccc5d47565ef332d466bc80dc5763f1b1139f14d3c0bae072725815f` and the cipher text
 `0x49f573321bdb3ad0a78f0e0c7cd4f4aa2a6d5911c90540ddbbaf067c6aabaccde78c8ff70c5a4abe7d4efa19074a5249b2e6525a0168c0c49535bc993efb7e2c221f4f349a014477d4134f03413fd7241303e634499313034dbb4ac96606faed5de01e784f2706e85bf3e814f5f88027b8aeccf18c928821c9d2d830b5050a1e` out of the `intercepted_message.pcap` using [Wireshark](https://www.wireshark.org/). We can glean two key observations from this:
 1. This modulus must be a product of two of the 30 primes being used.
 2. The server lets us generate as many moduli as we want.
@@ -52,4 +52,4 @@ print c/gcd(test_num,c)
 ```
 ### Flag ###
 
-make_sure_your_rng_generates_lotsa_primes
+    make_sure_your_rng_generates_lotsa_primes

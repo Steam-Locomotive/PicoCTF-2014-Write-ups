@@ -1,5 +1,5 @@
 # Caesar - 20 (Cryptography) ##
-####writeup by evantey14
+####Writeup by evantey14
 
 ### Problem
 You find an encrypted message written on the documents. Can you decrypt it?
@@ -30,4 +30,4 @@ For us, this happens at N=22, where we see
 `thesecretpassphraseisasphkjrhxqqedlnqxizlykirtgftgz`.
 
 ###Flag
-asphkjrhxqqedlnqxizlykirtgftgz
+    asphkjrhxqqedlnqxizlykirtgftgz

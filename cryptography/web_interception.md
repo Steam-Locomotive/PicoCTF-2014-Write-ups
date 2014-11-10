@@ -80,12 +80,15 @@ about ECB and why it is insecure
 hope to be able to attack this cipher by manipulating
 
 
-(My send function takes care of encodeing to hex and all that jazz.) I
-can find out the length of the secret. If I send an 8, 9, 10, or 11 long
-string, the length of the response is 80 bytes long. If I send a 12, 13, 14, or
-15 long string, the length of the response is 76. Sending 11 bytes must make
-the message fit perfectly in 80 bytes. Sending 12 bytes must make it go one
-over 80, which needs another block (of 16 bytes), which will end up being 96.
+(My send function takes care of encoding to hex and all that jazz.) I can find
+out the length of the secret. If I send an 8, 9, 10, or 11 long string, the
+length of the response is 80 bytes long. If I send a 12, 13, 14, or 15 long
+string, the length of the response is 76. Sending 11 bytes must make the
+message fit perfectly in 80 bytes. Sending 12 bytes must make it go one over
+80, which needs another block (of 16 bytes), so the returned  will end up being
+96 characters long. 80 bytes - 5 bytes (for 'GET /') - 11 bytes (for user
+input) equals 64 bytes.
+
 
 Here is the interesting part: if I send 11 bytes of filler text, I can finish
 off the block started by `GET /`. Then after that, I can send 15 bytes of
@@ -95,7 +98,7 @@ off the block started by `GET /`. Then after that, I can send 15 bytes of
     ^                             ^                                           ^
 	First block                   Second block                                Third block
 
-where the | denotes a border of the blocks, and the number 1 reperesents the
+where the | denotes a border of the blocks, and the number 1 represents the
 first character of the secret, 2 the second character, and so on. Once I have
 sent this request, I should store the second block of the result.
 
