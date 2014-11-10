@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import datetime
 import re
+import sh
 from sh import git, ls
 
 def insertion_point(data):
@@ -26,7 +27,7 @@ def run():
     mod_files = git('--no-pager', 'diff', '--name-only', '--no-color', 'HEAD', 'HEAD~1')
     print ('investigating files: ' + ', '.join(mod_files))
     for line in mod_files.split('\n'):
-        file_name = './' + line.strip()
+        file_name = line.strip()
 
         try:
             ls(file_name) # test if file exists
