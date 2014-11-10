@@ -4,11 +4,11 @@ Make your explanations clear and concise
 Beginners should be able to understand it
 Link to outside resources all da time
 All of the text should be aligned to 79 characters.
-In Emacs, do Ctrl+x f 79 RET Alt-x auto-fill-mode RET, then do Alt-q to realign text
+In Emacs, do Ctrl+x f 79 RET Alt+x auto-fill-mode RET, then do Alt-q to realign text
 -->
 
 ## Tyrannosaurus Hex - 10 (Miscellaneous) ##
-####Writeup by GladiusMaximus
+#### Writeup by Gladius Maximus
 
 ### Problem ###
 
