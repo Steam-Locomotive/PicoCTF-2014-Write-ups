@@ -25,6 +25,7 @@
    * [Revenge of the Bleichenbacher](cryptography/revenge.md)
    * [RSA Mistakes](cryptography/RSAMistake.md)
 * [Forensics](forensics/README.md)
+   * [Intercepted Post](forensics/intercepted_post.md)
    * [Snapcat](forensics/snapcat.md)
    * [SSH Backdoor](forensics/ssh_backdoor.md)
 * [Binary Exploitation](binary_exploitation/README.md)
