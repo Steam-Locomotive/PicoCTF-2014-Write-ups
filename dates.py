@@ -66,7 +66,7 @@ if 'dates bot' not in commit_msg:
     run()
     try:
         a = git('commit', '--all', '--message=dates bot', _err=print)
-    except sh.ErrorReturnCode_1:
+    except:
         print ('no can do, hombre')
     else:
         git('push')
