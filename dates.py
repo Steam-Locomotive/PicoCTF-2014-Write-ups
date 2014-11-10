@@ -46,7 +46,7 @@ def run():
             print ('{file_name} is not formatted for a date'.format(**locals()))
             continue
 
-        print ('{file_name} putting date {m}'.format(**locals()))
+        print ('{file_name} putting date {m} ({a} to {b})'.format(**locals()))
         c_date, m_date = format_dates(file_name)
         file_contents = (
             file_contents[:a] + '\n'
@@ -58,7 +58,7 @@ def run():
             file_obj.write(file_contents)
 
 commit_msg = str(git('--no-pager', 'show', 'HEAD', '--format="%s"', '-s')).strip()
-if 'dates bot' not in commit_msg:
+if 'dates bot' in commit_msg:
     print ('working on commit: {commit_msg!r}'.format(**locals()))
     run()
     try:
