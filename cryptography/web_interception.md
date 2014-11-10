@@ -170,9 +170,11 @@ above.
 
 Then you remember the second block of the return. Rember that you already know the first 15 letters from the previous method. You simply send those 15 letters back to the server plus another letter.
 
-    G E T   / A A A A A A A A A A | 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 i | 17 18 ...
+    G E T   / A A A A A A A A A A | 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 i | 1 2 3 ...
     ^                             ^                                         ^
 	First block                   Second block                              Third block
+
+	Where the user input is 11 As, the first 15 letters of the secret, and a guess i.
 
 ```python
 for i in range(16, 32):
@@ -266,3 +268,4 @@ I am not sure why it does not find an answer for 63. Perhaps I got the length of
 
     congrats_on_your_first_ecb_decryption
 
+p
