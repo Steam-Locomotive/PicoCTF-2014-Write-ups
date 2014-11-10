@@ -70,3 +70,4 @@ if 'dates bot' not in commit_msg:
         print ('no can do, hombre')
     else:
         git('push')
+ 
