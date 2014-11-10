@@ -57,7 +57,7 @@ def run():
             file_obj.write(file_contents)
 
 if str(git('--no-pager', 'show', 'HEAD', '--format="%s"', '-s')).strip() != 'date bot':
-    print (str(git('--no-pager', 'show', 'HEAD', '--format="%s"', '-s')).strip())
+    print ('working on commit: {0}'.format(str(git('--no-pager', 'show', 'HEAD', '--format="%s"', '-s')).strip()))
     run()
     try:
         a = git('commit', '--all', '--message=date bot')
