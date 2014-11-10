@@ -59,7 +59,7 @@ def run():
 if str(git('--no-pager', 'show', 'HEAD', '--format="%s"', '-s')).strip() != 'date bot':
     run()
     try:
-        a = git('commit', '--all', '--message="date bot"')
+        a = git('commit', '--all', '--message=date bot')
     except sh.ErrorReturnCode_1:
         print ('no can do, hombre')
     else:
