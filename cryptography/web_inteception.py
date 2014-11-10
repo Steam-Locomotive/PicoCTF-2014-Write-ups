@@ -22,47 +22,49 @@ known = ''
 
 print (known)
 try:
-    for i in range(len(known), 64): # 64 = length of secret
+    for i in range(0, 16): # 64 = length of secret
             # one iteration takes about 20 seconds
-            if 0 <= i < 16:
-                    target = send('A' * (11 + 15 - i))[16:32]
-                    for test_char in alphabet:
-                            resp = send('A' * (11 + 15 - i) + known + test_char)[16:32]
-                            if resp == target:
-                                    known += test_char
-                                    print (known)
-                                    break
-                    else:
-                        print ('no answer for', i)
-            if 16 <= i < 32:
-                    target = send('A' * (11 + 16 + 15 - i))[32:48]
-                    for test_char in alphabet:
-                            resp = send('A' * (11 + 16 + 15 - i) + known + test_char)[32:48]
-                            if resp == target:
-                                    known += test_char
-                                    print (known)
-                                    break
-                    else:
-                        print ('no answer for', i)
-            if 32 <= i < 48:
-                    target = send('A' * (11 + 16 + 16 + 15 - i))[48:64]
-                    for test_char in alphabet:
-                            resp = send('A' * (11 + 16 + 16 + 15 - i) + known + test_char)[48:64]
-                            if resp == target:
-                                    known += test_char
-                                    print (known)
-                                    break
-                    else:
-                        print ('no answer for', i)
-            if 48 <= i < 64:
-                    target = send('A' * (11 + 16 + 16 + 16 + 15 - i))[64:80]
-                    for test_char in alphabet:
-                            resp = send('A' * (11 + 16 + 16 + 16 + 15 - i) + known + test_char)[64:80]
-                            if resp == target:
-                                    known += test_char
-                                    print (known)
-                                    break
-                    else:
-                        print ('no answer for', i)
+        target = send('A' * (11 + 15 - i))[16:32]
+        for test_char in alphabet:
+            resp = send('A' * (11 + 15 - i) + known + test_char)[16:32]
+            if resp == target:
+                known += test_char
+                print (repr(known))
+                break
+        else:
+            print ('no answer for', i)
+    for i in range(16, 32):
+        target = send('A' * (11 + 15 + 16 - i))[32:48]
+        for test_char in alphabet:
+             resp = send('A' * (11 + 15 + 16 - i) + known + test_char)[32:48]
+             if resp == target:
+                 known += test_char
+                 print (repr(known))
+                 break
+        else:
+             print ('no answer for', i)
+
+    for i in range(32, 48):
+         target = send('A' * (11 + 15 + 32 - i))[48:64]
+         for test_char in alphabet:
+             resp = send('A' * (11 + 15 + 32 - i) + known + test_char)[48:64]
+             if resp == target:
+                 known += test_char
+                 print (repr(known))
+                 break
+         else:
+             print ('no answer for', i)
+
+
+    for i in range(48, 64):
+        target = send('A' * (11 + 15 + 48 - i))[64:80]
+        for test_char in alphabet:
+            resp = send('A' * (11 + 15 + 48 - i) + known + test_char)[64:80]
+            if resp == target:
+                known += test_char
+                print (repr(known))
+                break
+    else:
+        print ('no answer for', i)
 finally:
     print (repr(known))
