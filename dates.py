@@ -22,7 +22,9 @@ def format_dates(file_name):
     #create_date = datetime.datetime.strptime(createdate_txt[:19], '%Y-%m-%d %H:%M:%S')
     return c_date_txt[:19], m_date.strftime('%Y-%m-%d %H:%M:%S')
 
+    
 def run():
+    print ('investigating files: ' + ', '.join(str(git('--no-pager', 'diff', '--name-only', '--no-color', 'HEAD~1', 'HEAD~2')).split('\n')))
     for line in git('--no-pager', 'diff', '--name-only', '--no-color', 'HEAD~1', 'HEAD~2', _iter=True):
         file_name = './' + line.strip()
 
@@ -56,5 +58,9 @@ def run():
 
 if str(git('--no-pager', 'show', 'HEAD', '--format="%s"', '-s')).strip() != 'date bot':
     run()
-    git('commit', '--all', '--message="date bot"')
-    git('push')
+    try:
+        a = git('commit', '--all', '--message="date bot"')
+    except sh.ErrorReturnCode_1:
+        print ('no can do, hombre')
+    else:
+        git('push')
