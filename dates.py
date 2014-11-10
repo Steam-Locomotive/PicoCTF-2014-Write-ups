@@ -22,7 +22,7 @@ def format_dates(file_name):
     #create_date = datetime.datetime.strptime(createdate_txt[:19], '%Y-%m-%d %H:%M:%S')
     return c_date_txt[:19], m_date.strftime('%Y-%m-%d %H:%M:%S')
 
-def run()
+def run():
     for line in git('--no-pager', 'diff', '--name-only', '--no-color', 'HEAD~1', 'HEAD~2', _iter=True):
         file_name = './' + line.strip()
 
