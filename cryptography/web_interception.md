@@ -1,7 +1,10 @@
 ## Web Interception - 140 (Cryptography)
 #### Writeup by Gladius Maximus
+
 Created: 2014-11-08 00:49:29
-Last modified: 2014-11-09 22:28:42
+
+Last modified: 2014-11-09 23:01:35
+
 
 ### Problem ###
 

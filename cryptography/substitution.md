@@ -1,7 +1,10 @@
 ## Substitution - 50 (Cryptography) ##
 #### writeup by Gladius Maximus
+
 Created: 2014-11-07 22:12:02
-Last modified: 2014-11-09 22:28:42
+
+Last modified: 2014-11-09 23:01:35
+
 
 ### Problem ###
 There's an authorization code for some Thyrin Labs information here,
