@@ -31,4 +31,3 @@ For us, this happens at N=22, where we see
 
 ###Flag
     asphkjrhxqqedlnqxizlykirtgftgz
-
