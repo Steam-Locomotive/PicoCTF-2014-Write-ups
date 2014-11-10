@@ -57,7 +57,7 @@ def run():
             file_obj.write(file_contents)
 
 commit_msg = str(git('--no-pager', 'show', 'HEAD', '--format="%s"', '-s')).strip()
-print ('{commit_msg!r} != \'date bot\', so I continue work'.format(**locals())
+print ('{commit_msg!r} != \'date bot\', so I continue work'.format(**locals()))
 if commit_msg != 'date bot':
     print ('working on commit: {commit_msg!r}'.format(**locals()))
     run()
