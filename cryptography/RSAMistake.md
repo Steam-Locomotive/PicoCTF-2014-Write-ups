@@ -1,7 +1,7 @@
 ## RSA Mistakes - 200 (Cryptography) ##
 ####Writeup by ZIceZ
 Created: 2014-11-07 23:22:41
-Last modified: 2014-11-09 22:28:22
+Last modified: 2014-11-09 22:28:25
 ### Problem ###
 Daedalus Corp seems to have had a very weird way of broadcasting some secret data. [We managed to find the server code that broadcasted it, and one of our routers caught some of their traffic](https://picoctf.com/problem-static/crypto/rsa-mistakes/handout.zip) - can you find the secret data? We think someone may have requested the secret using someone else's user id by accident, but we're not sure.
 

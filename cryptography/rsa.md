@@ -1,7 +1,7 @@
 ## RSA - 80 (Cryptography) ##
 ####Writeup by Oksisane
 Created: 2014-11-07 19:13:48
-Last modified: 2014-11-09 22:28:22
+Last modified: 2014-11-09 22:28:26
 
 ### Problem ###
 
