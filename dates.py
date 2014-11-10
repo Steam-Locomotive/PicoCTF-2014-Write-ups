@@ -8,10 +8,10 @@ def insertion_point(data):
     i = re.search(r'(\{date\})', data)
     if i:
         return i.start(1), i.end(1), 'in place of {date}'
-    i = re.search(r'(Created:.*\nLast modified:.*\n)', data)
+    i = re.search(r'(\nCreated:.*\n\nLast modified:.*\n\n)', data)
     if i:
         return i.start(1), i.end(1), 'in place of old date'
-    i = re.search(r'(####\s?write\s?up.*\n)', data, re.IGNORECASE)
+    i = re.search(r'(####\s*write\s*up.*\n)', data, re.IGNORECASE)
     if i:
         return (i.end(1), i.end(1), 'after writeup byline', )
     return None, None, None
@@ -57,6 +57,7 @@ def run():
             file_obj.write(file_contents)
 
 if str(git('--no-pager', 'show', 'HEAD', '--format="%s"', '-s')).strip() != 'date bot':
+    print (str(git('--no-pager', 'show', 'HEAD', '--format="%s"', '-s')).strip())
     run()
     try:
         a = git('commit', '--all', '--message=date bot')
