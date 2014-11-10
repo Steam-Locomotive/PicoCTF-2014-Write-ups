@@ -22,10 +22,10 @@ def format_dates(file_name):
     #create_date = datetime.datetime.strptime(createdate_txt[:19], '%Y-%m-%d %H:%M:%S')
     return c_date_txt[:19], m_date.strftime('%Y-%m-%d %H:%M:%S')
 
-    
 def run():
-    print ('investigating files: ' + ', '.join(str(git('--no-pager', 'diff', '--name-only', '--no-color', 'HEAD', 'HEAD~1')).split('\n')))
-    for line in git('--no-pager', 'diff', '--name-only', '--no-color', 'HEAD~1', 'HEAD~2', _iter=True):
+    mod_files = git('--no-pager', 'diff', '--name-only', '--no-color', 'HEAD', 'HEAD~1')
+    print ('investigating files: ' + ', '.join(mod_files))
+    for line in mod_files.split('\n'):
         file_name = './' + line.strip()
 
         try:
@@ -56,8 +56,10 @@ def run():
         with open(file_name, 'w') as file_obj:
             file_obj.write(file_contents)
 
-if str(git('--no-pager', 'show', 'HEAD', '--format="%s"', '-s')).strip() != 'date bot':
-    print ('working on commit: {0}'.format(str(git('--no-pager', 'show', 'HEAD', '--format="%s"', '-s')).strip()))
+commit_msg = str(git('--no-pager', 'show', 'HEAD', '--format="%s"', '-s')).strip()
+print ('{commit_msg!r} != \'date bot\', so I continue work'.format(**locals())
+if commit_msg != 'date bot':
+    print ('working on commit: {commit_msg!r}'.format(**locals()))
     run()
     try:
         a = git('commit', '--all', '--message=date bot')
