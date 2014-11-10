@@ -26,6 +26,7 @@ def format_dates(file_name):
 
 def run():
     mod_files = git('--no-pager', 'diff', '--name-only', '--no-color', 'HEAD', 'HEAD~1')
+    link_prefix = 'https://github.com/Oksisane/PicoCTF-2014-Writeups/commits/master/'
     print ('investigating files: ' + ', '.join(mod_files))
     for line in mod_files.split('\n'):
         file_name = line.strip()
@@ -54,7 +55,7 @@ def run():
         file_contents = (
             file_contents[:a] + '\n'
             'Created: ' + c_date + '\n\n' +
-            'Last modified: ' + m_date + '\n\n' +
+            'Last modified: [' + m_date + '](' + link_prefix + file_name + ')\n\n' +
             file_contents[b:])
 
         with open(file_name, 'w') as file_obj:
