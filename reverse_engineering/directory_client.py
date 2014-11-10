@@ -68,3 +68,4 @@ for entry in itertools.count(0):
     entries.add(f['BADGE'])
     
 print (entry)
+
