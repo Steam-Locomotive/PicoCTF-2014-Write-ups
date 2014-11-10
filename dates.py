@@ -58,12 +58,11 @@ def run():
             file_obj.write(file_contents)
 
 commit_msg = str(git('--no-pager', 'show', 'HEAD', '--format="%s"', '-s')).strip()
-print ('{commit_msg!r} != \'date bot\', so I continue work'.format(**locals()))
-if commit_msg != 'date bot':
+if 'dates bot' not in commit_msg:
     print ('working on commit: {commit_msg!r}'.format(**locals()))
     run()
     try:
-        a = git('commit', '--all', '--message=date bot')
+        a = git('commit', '--all', '--message=dates bot')
     except sh.ErrorReturnCode_1:
         print ('no can do, hombre')
     else:
