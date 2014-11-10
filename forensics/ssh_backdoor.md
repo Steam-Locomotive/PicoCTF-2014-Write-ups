@@ -1,5 +1,5 @@
 ## SSH Backdoor - 100 (Forensics) ##
-####Wwriteup by Oksisane
+####Writeup by Oksisane
 
 ### Problem ###
 
