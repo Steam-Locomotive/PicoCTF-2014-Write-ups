@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+from __future__ import print_function
 import datetime
 import re
 import sh
@@ -29,13 +30,15 @@ def run():
     for line in mod_files.split('\n'):
         file_name = line.strip()
 
+        if not file_name:
+            continue # empty string
         try:
             ls(file_name) # test if file exists
         except:
-            print ('{file_name} is not present'.format(**locals()))
+            print ('{file_name}: file not found'.format(**locals()))
             continue
         if '.md' not in file_name:
-            print ('{file_name} is not a markdown file'.format(**locals()))
+            print ('{file_name}: file is not in markdown'.format(**locals()))
             continue
 
         with open(file_name, 'r') as file_obj:
@@ -43,10 +46,10 @@ def run():
 
         a, b, m = insertion_point(file_contents)
         if not (a and b):
-            print ('{file_name} is not formatted for a date'.format(**locals()))
+            print ('{file_name}: file is not formatted for a date or is not a write up'.format(**locals()))
             continue
 
-        print ('{file_name} putting date {m} ({a} to {b})'.format(**locals()))
+        print ('{file_name}: putting date {m} ({a} to {b})'.format(**locals()))
         c_date, m_date = format_dates(file_name)
         file_contents = (
             file_contents[:a] + '\n'
@@ -62,7 +65,7 @@ if 'dates bot' not in commit_msg:
     print ('working on commit: {commit_msg!r}'.format(**locals()))
     run()
     try:
-        a = git('commit', '--all', '--message=dates bot')
+        a = git('commit', '--all', '--message=dates bot', _err=print)
     except sh.ErrorReturnCode_1:
         print ('no can do, hombre')
     else:
