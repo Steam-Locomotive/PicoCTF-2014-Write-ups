@@ -78,7 +78,7 @@ xor ----------------------------------------------------------------------
 13,  7, 28, 10,111, 24, 28, 28,  6, 24,  8, 16,121,  6,  6,121,  1, 26, 13
 ```
 
-For any $a$ and $b$, $a \oplus b$ \oplus b = a$ ($\oplus$ stands for XOR). XOR
+For any $$a$$ and $$b$$, $$a \oplus b$ $$ \oplus b = a$$ ($$\oplus$$ stands for XOR). XOR
 has the special property that if $a \oplus b = c$, then $a \oplus c = b$. This
 means XOR is its own inverse. That will come in handy later.
 
@@ -167,9 +167,9 @@ for i in range(0, key_len):
 
 Once we have the most frequently occuring character, we say it decrypts to ' '
 (space occurs most frequently in a block of text). Let the most frequently
-occuring character in the nth column of the cipher text $c_n$. Let the nth
-character of the key is $k_n$. Let ' ' be $m$. We know that $m \oplus k_n =
-c_n$. XOR is its own inverse, so $m \oplus c_n = k_n$. Thus we can find the key
+occuring character in the nth column of the cipher text $$c_n$$. Let the nth
+character of the key is $$k_n$$. Let ' ' be $m$. We know that $m \oplus k_n =
+c_n$. XOR is its own inverse, so $$m \oplus c_n = k_n$$. Thus we can find the key
 if we know the most common character in english and the most common character
 in the nth column.
 
