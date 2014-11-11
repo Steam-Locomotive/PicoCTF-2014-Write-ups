@@ -28,7 +28,7 @@ During PicoCTF 2014, we accumulated a total of 4985 points and finished in 18th 
 We are also extremely appreciative of the members of our sister teams at the Liberal Art Science Academy that have contributed writups. They are:
 
 * Ashwin Gupta - [Shwinn](https://github.com/Shwinn)
-
+* Niels Kornerup - [NielsKornerup](https://github.com/NielsKornerup)
 
 This [GitBook](http://gitbook.io)'s goal is to contain a comprehensive set of write-ups for all of the challenges in PicoCTF 2014, complete with each problem, explanation of its solution, and the flag. It is a constant work in progress, so if a write up is not posted immediately, don't worry! We are working as fast as possible to add all of the problems, and should have them done within a couple weeks.
 
