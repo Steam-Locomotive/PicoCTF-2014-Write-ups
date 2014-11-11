@@ -168,8 +168,8 @@ for i in range(0, key_len):
 Once we have the most frequently occuring character, we say it decrypts to ' '
 (space occurs most frequently in a block of text). Let the most frequently
 occuring character in the nth column of the cipher text $$c_n$$. Let the nth
-character of the key is $$k_n$$. Let ' ' be $m$. We know that $m \oplus k_n =
-c_n$. XOR is its own inverse, so $$m \oplus c_n = k_n$$. Thus we can find the key
+character of the key is $$k_n$$. Let ' ' be $$m$$. We know that $$m \oplus k_n =
+c_n$$. XOR is its own inverse, so $$m \oplus c_n = k_n$$. Thus we can find the key
 if we know the most common character in english and the most common character
 in the nth column.
 
