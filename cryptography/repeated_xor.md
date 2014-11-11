@@ -81,9 +81,9 @@ xor ----------------------------------------------------------------------
 XOR has a lot of special properties. First XOR is commutative. $$a \oplus b = b
 \oplus a$$ ($$\oplus$$ stands for XOR). It is associative $$a \oplus (b \oplus
 c) = (a \oplus b) \oplus c $$. Next, anything XORed with itself is zero: $$ a
-\oplus a = 0 $$, and anything XORed with zero is anything: $$ \a oplus 0 =
-a$$. Thus we can conclude that $a \oplus b \oplus b = a \oplus (b \oplus b) = a
-\oplus 0 = a$$. Furthermore, if $$a \oplus b = c$$, then $$a \oplus c = a
+\oplus a = 0 $$, and anything XORed with zero is anything: $$ a \oplus 0 =
+a$$. Thus we can conclude that $$ a \oplus b \oplus b = a \oplus (b \oplus b) =
+a \oplus 0 = a$$. Furthermore, if $$a \oplus b = c$$, then $$a \oplus c = a
 \oplus (a \oplus b) = (a \oplus a) \oplus b = 0 \oplus b = b$$.
 
 If that all went over your head, just know that XOR is its own inverse. That
@@ -175,10 +175,11 @@ for i in range(0, key_len):
 Once we have the most frequently occuring character, we say it decrypts to ' '
 (space occurs most frequently in a block of text). Let the most frequently
 occuring character in the nth column of the cipher text $$c_n$$. Let the nth
-character of the key is $$k_n$$. Let ' ' be $$m$$. We know that $$m \oplus k_n =
-c_n$$. XOR is its own inverse, so $$m \oplus c_n = k_n$$. Thus we can find the key
-if we know the most common character in english and the most common character
-in the nth column.
+character of the key is $$k_n$$. Let ' ' be $$m$$. We know that $$m \oplus k_n
+= c_n$$. XOR is its own inverse, so $$m \oplus c_n = k_n$$. So because XOR is
+its own inverse, we can find the key by XORing cipher text and known plain text
+Thus we can find the key if we know the most common character in english and
+the most common character in the nth column.
 
 We can check this by printing out what other common characters decrypt to. If
 we have the right answer, we should get other common characters decrypting to
