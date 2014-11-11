@@ -3,7 +3,7 @@
 
 Created: 2014-11-07 22:12:02
 
-Last modified: 2014-11-09 23:09:55
+Last modified: [2014-11-11 18:00:44](https://github.com/Oksisane/PicoCTF-2014-Writeups/commits/master/cryptography/substitution.md)
 
 
 
