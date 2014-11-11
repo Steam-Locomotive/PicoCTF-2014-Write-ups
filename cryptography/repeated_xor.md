@@ -78,8 +78,8 @@ xor ----------------------------------------------------------------------
 13,  7, 28, 10,111, 24, 28, 28,  6, 24,  8, 16,121,  6,  6,121,  1, 26, 13
 ```
 
-For any $$a$$ and $$b$$, $$a \oplus b$ $$ \oplus b = a$$ ($$\oplus$$ stands for XOR). XOR
-has the special property that if $a \oplus b = c$, then $a \oplus c = b$. This
+For any $$a$$ and $$b$$, $$a \oplus b$$ $$\oplus b = a$$ ($$\oplus$$ stands for XOR). XOR
+has the special property that if $$a \oplus b = c$$, then $$a \oplus c = b$$. This
 means XOR is its own inverse. That will come in handy later.
 
 However, because repeated text shows up frequently in the English language, we
