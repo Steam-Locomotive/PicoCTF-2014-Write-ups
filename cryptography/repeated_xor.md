@@ -1,6 +1,11 @@
 ## Repeated XOR - 70 (Cryptography) ##
 #### Writeup by Gladius Maximus
 
+Created: 2014-11-11 16:46:34
+
+Last modified: [2014-11-11 17:46:39](https://github.com/Oksisane/PicoCTF-2014-Writeups/commits/master/cryptography/repeated_xor.md)
+
+
 ### Problem ###
 
 There's a secret passcode hidden in the robot's "history of cryptography"
