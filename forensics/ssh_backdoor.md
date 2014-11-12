@@ -1,6 +1,11 @@
 ## SSH Backdoor - 100 (Forensics) ##
 ####Writeup by Oksisane
 
+Created: 2014-11-07 20:25:54
+
+Last modified: [2014-11-11 19:35:43](https://github.com/Oksisane/PicoCTF-2014-Writeups/commits/master/forensics/ssh_backdoor.md)
+
+
 ### Problem ###
 
 Some hackers have broken into my server `backdoor.picoctf.com` and locked my user out (my username is jon). I need to retrieve the `flag.txt` file from my home directory.
