@@ -1,4 +1,4 @@
-PicoCTF 2014 Writeups
+PicoCTF 2014 Write-ups
 =====================
 
 <pre style="background-color:white">
