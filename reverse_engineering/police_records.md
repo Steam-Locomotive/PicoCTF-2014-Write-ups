@@ -9,7 +9,7 @@ Last modified: 2014-11-09 23:28:11
 
 A Theseus double agent has infiltrated the police force but the police won't
 give you access to their directory information. Thankfully you found the
-[source code](directory_server.py) to their directory server. Write a client to
+[source code](https://picoctf.com/problem-static/reversing/PoliceRecords/directory_server.py) to their directory server. Write a client to
 interact with the server and find the duplicated badge number! The flag is the
 badge number.
 
