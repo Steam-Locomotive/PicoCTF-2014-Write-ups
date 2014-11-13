@@ -18,6 +18,7 @@
 * [Cryptography](cryptography/README.md)
    * [Caesar](cryptography/caesar.md)
    * [The Valley of Fear](cryptography/the_valley_of_fear.md)
+   * [ZOR](cryptography/zor.md)
    * [Substitution](cryptography/substitution.md)
    * [Repeated XOR](cryptography/repeated_xor.md)
    * [RSA](cryptography/rsa.md)
