@@ -1,6 +1,11 @@
 ## ZOR - 50 (Cryptography) ##
 #### Writeup by Gladius Maximus
 
+Created: 2014-11-13 09:26:47
+
+Last modified: [2014-11-13 10:26:53](https://github.com/Oksisane/PicoCTF-2014-Writeups/commits/master/cryptography/zor.md)
+
+
 ### Problem ###
 
 Daedalus has encrypted their blueprints! Can you get us the password?
