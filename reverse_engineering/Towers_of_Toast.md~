@@ -21,20 +21,9 @@ To solve this problem, open up the Java program and change the code so that the 
 
 ### Details ###
 
-If you try and run the Java program, it will ask you to create a new game or load an old one. If you type new, then you will be given a random set of disks and the program will break down, saying "Sorry, the game is broken :(", but it will give you a set of save numbers. If you try to load a game with your set of save numbers, it will recreate the board and quit the program unless your entered the winning game state, in which case you will receive the flag. To solve this problem, we will modify the Java program so that it gives you the game state for the winning board.
+If you try and run the Java program, it will ask you to create a new game or load an old one. If you type new, then you will be given a random set of disks and the program will break down, saying "Sorry, the game is broken :(", but it will give you a set of save numbers. If you try to load a game with your set of save numbers, it will recreate the board and quit the program unless your entered the winning game state, in which case you will recieve the flag. To solve this problem, we will modify the Java program so that it gives you the gamestate for the winning board.
 
-To do this, we will want to change the new game method so that it gives us a winning game state (where all blocks are on the first post). If you look at the Java code for the new game method, it uses a random number to assign rings to random posts. All we need to do is change it so that all the rings go to the first post. If you look at the Java code for the ring distribution:
-
-```java
-for (int i = 0; i < GAME_SIZE; i++) {
-	int pole = rand.nextInt(3);
-	if (pole == 0) { pole1.add(BigInteger.valueOf(i)); }
-	else if (pole == 1) { pole2.add(BigInteger.valueOf(i)); }
-	else { pole3.add(BigInteger.valueOf(i)); }
-}
-```
-
-This code runs through all the rings and adds them to random posts. If we change the code so that regardless of the value of pole, the rings will be added to pole1, then the program will return the save state that we desire. To do this, we replace that code with this:
+To do this, we will want to change the new game method so that it gives us a winning game state (where all blocks are on the first post). If you look at the java code for the new game method, it uses a random number to assign rings to random posts. All we need to do is change it so that all the rings go to the first post. If you look at the Java code for the ring distrabution:
 
 ```java
 for (int i = 0; i < GAME_SIZE; i++) {
@@ -45,7 +34,18 @@ for (int i = 0; i < GAME_SIZE; i++) {
 }
 ```
 
-Now if you recompile the code and run it, then you should get a winning board configuration. Just load this game state, and you will receive the flag.
+This code runs through all the rings and adds them to random posts. If we change the code so that regaurdless of the value of pole, the rings will be added to pole1, then the program will return the save state that we desire. To do this, we replace that code with this:
+
+```java
+for (int i = 0; i < GAME_SIZE; i++) {
+	int pole = rand.nextInt(3);
+	if (pole == 0) { pole1.add(BigInteger.valueOf(i)); }
+	else if (pole == 1) { pole2.add(BigInteger.valueOf(i)); }
+	else { pole3.add(BigInteger.valueOf(i)); }
+}
+```
+
+Now if you recomple the code and run it, then you sould get a winning board configuration. Just load this gamestate, and you will recieve the flag.
 
 
 ### Flag ###
