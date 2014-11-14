@@ -3,6 +3,7 @@
 * [Introduction](README.md)
 * [Reverse Engineering](reverse_engineering/README.md)
    * [Function Address](reverse_engineering/function_address.md)
+   * [Basic ASM](reverse_engineering/basic_asm.md)
    * [Cyborg Secrets](reverse_engineering/cyborg_secrets.md)
    * [Towers of Toast](reverse_engineering/towers_of_toast.md)
    * [Police Records](reverse_engineering/police_records.md)
