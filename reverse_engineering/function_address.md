@@ -1,6 +1,11 @@
 ## Function Address - 60 (Reverse Engineering) ##
 #### Writeup by Shwinn ####
 
+Created: 2014-11-13 21:52:55
+
+Last modified: [2014-11-13 22:53:52](https://github.com/Oksisane/PicoCTF-2014-Writeups/commits/master/reverse_engineering/function_address.md)
+
+
 ### Problem ###
 We found this [program file](https://picoctf.com/problem-static/reversing/function-address/problem) on some systems. But we need the address of the 'find_string' function to do anything useful! Can you find it for us?
 
