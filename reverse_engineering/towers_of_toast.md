@@ -40,8 +40,8 @@ This code runs through all the rings and adds them to random posts. If we change
 for (int i = 0; i < GAME_SIZE; i++) {
 	int pole = rand.nextInt(3);
 	if (pole == 0) { pole1.add(BigInteger.valueOf(i)); }
-	else if (pole == 1) { pole2.add(BigInteger.valueOf(i)); }
-	else { pole3.add(BigInteger.valueOf(i)); }
+	else if (pole == 1) { pole1.add(BigInteger.valueOf(i)); }
+	else { pole1.add(BigInteger.valueOf(i)); }
 }
 ```
 
