@@ -7,7 +7,7 @@ Last modified: [2014-11-13 21:37:49](https://github.com/Oksisane/PicoCTF-2014-Wr
 
 ### Problem ###
 
- Everyone loves the [Tower of Hanoi](https://en.wikipedia.org/wiki/Towe r_of_Hanoi) puzzle. Well it appears the Toaster Bot wants you to play an essentially identical game called "Towers of Toast". The game doesn't seem to be working though... Can you win anyway? Perhaps by loading a winning saved game? Download the Java code [here](https://picoctf.com/problem-static/reversing/towers-of-toast/Main.java). 
+ Everyone loves the [Tower of Hanoi](https://en.wikipedia.org/wiki/Towe r_of_Hanoi) puzzle. Well it appears the Toaster Bot wants you to play an essentially identical game called "Towers of Toast". The game doesn't seem to be working though... Can you win anyway? Perhaps by loading a winning saved game? Download the Java code [here](https://picoctf.com/problem-static/reversing/towers-of-toast/Main.java).
 
 ### Hint ###
 
