@@ -1,6 +1,11 @@
 ## Basic ASM - 60 (Reverse Engineering) ##
 #### Writeup by Shwinn ####
 
+Created: 2014-11-13 22:22:35
+
+Last modified: [2014-11-13 23:22:54](https://github.com/Oksisane/PicoCTF-2014-Writeups/commits/master/reverse_engineering/basic_asm.md)
+
+
 ### Problem ###
 We found this program [snippet.txt](https://picoctf.com/api/autogen/serve/snippet.txt?static=false&pid=654a1385b6d2f9091efe2af864d8d2da), but we're having some trouble figuring it out. What's the value of %eax when the last instruction (the NOP) runs?
 
