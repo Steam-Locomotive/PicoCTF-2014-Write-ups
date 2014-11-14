@@ -35,3 +35,4 @@ This [GitBook](http://gitbook.io)'s goal is to contain a comprehensive set of wr
 We would like to thank the creators of PicoCTF, [Plaid Parliment of Pwning](http://ppp.cylab.cmu.edu/wordpress/) and [Team Daedalus](http://www.etc.cmu.edu/blog/projects/deadalus/) for the competition and all the participants of PicoCTF for making it a blast! Also we'd like to give a special shoutout to [HSCTF](http://hsctf.com/) whose own GitBook inspired this one.
 
 If you found these writeups helpful, be sure to star the repository [on Github](https://github.com/Oksisane/PicoCTF-2014-Writeups)!
+
