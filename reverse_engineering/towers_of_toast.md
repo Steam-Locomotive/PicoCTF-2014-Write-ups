@@ -3,11 +3,11 @@
 
 Created: 2014-11-13 08:55:29
 
-Last modified: [2014-11-13 21:37:49](https://github.com/Oksisane/PicoCTF-2014-Writeups/commits/master/reverse_engineering/towers_of_toast.md)
+Last modified: [2014-11-14 09:30:19](https://github.com/Oksisane/PicoCTF-2014-Writeups/commits/master/reverse_engineering/towers_of_toast.md)
 
 ### Problem ###
 
- Everyone loves the [Tower of Hanoi](https://en.wikipedia.org/wiki/Towe r_of_Hanoi) puzzle. Well it appears the Toaster Bot wants you to play an essentially identical game called "Towers of Toast". The game doesn't seem to be working though... Can you win anyway? Perhaps by loading a winning saved game? Download the Java code [here](https://picoctf.com/problem-static/reversing/towers-of-toast/Main.java). 
+ Everyone loves the [Tower of Hanoi](https://en.wikipedia.org/wiki/Towe r_of_Hanoi) puzzle. Well it appears the Toaster Bot wants you to play an essentially identical game called "Towers of Toast". The game doesn't seem to be working though... Can you win anyway? Perhaps by loading a winning saved game? Download the Java code [here](https://picoctf.com/problem-static/reversing/towers-of-toast/Main.java).
 
 ### Hint ###
 
@@ -40,8 +40,8 @@ This code runs through all the rings and adds them to random posts. If we change
 for (int i = 0; i < GAME_SIZE; i++) {
 	int pole = rand.nextInt(3);
 	if (pole == 0) { pole1.add(BigInteger.valueOf(i)); }
-	else if (pole == 1) { pole2.add(BigInteger.valueOf(i)); }
-	else { pole3.add(BigInteger.valueOf(i)); }
+	else if (pole == 1) { pole1.add(BigInteger.valueOf(i)); }
+	else { pole1.add(BigInteger.valueOf(i)); }
 }
 ```
 
