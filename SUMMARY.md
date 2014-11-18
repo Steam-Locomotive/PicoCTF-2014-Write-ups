@@ -39,6 +39,7 @@
    * [Format](binary_exploitation/format.md)
    * [Execute Me](binary_exploitation/execute_me.md)
    * [OBO](binary_exploitation/OBO.md)
+   * [ROP 1](binary_exploitation/rop_1.md)
 * [Miscellaneous](miscellaneous/README.md)
    * [Tyrannosaurus Hex](miscellaneous/tyrannosaurus_hex.md)
    * [OBO](binary_exploitation/OBO.md)
