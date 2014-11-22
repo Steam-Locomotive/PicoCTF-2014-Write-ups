@@ -40,6 +40,7 @@
    * [Overflow 1](binary_exploitation/overflow1.md)
    * [Overflow 2](binary_exploitation/overflow_2.md)
    * [Format](binary_exploitation/format.md)
+   * [Guess](binary_exploitation/guess.md)
    * [Execute Me](binary_exploitation/execute_me.md)
    * [OBO](binary_exploitation/OBO.md)
    * [ROP 1](binary_exploitation/rop_1.md)
