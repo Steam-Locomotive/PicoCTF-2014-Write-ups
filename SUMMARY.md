@@ -34,6 +34,7 @@
 * [Forensics](forensics/README.md)
    * [Intercepted Post](forensics/intercepted_post.md)
    * [Snapcat](forensics/snapcat.md)
+   * [PNG or Not?](forensics/png_or_not?.md)
    * [SSH Backdoor](forensics/ssh_backdoor.md)
 * [Binary Exploitation](binary_exploitation/README.md)
    * [Overflow 1](binary_exploitation/overflow1.md)
